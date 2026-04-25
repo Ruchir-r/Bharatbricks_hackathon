@@ -6,7 +6,7 @@ DELETE FROM bricksiitm.rx_helper.drug_timetable  WHERE session_id = 'demo-patien
 DELETE FROM bricksiitm.rx_helper.side_effect_log WHERE session_id = 'demo-patient-001';
 
 INSERT INTO bricksiitm.rx_helper.patient_sessions VALUES (
-  'demo-patient-001', 'Rina Devi', '+919999000001', 'hi-IN', '+919999000002', current_timestamp()
+  'demo-patient-001', 'Rina Devi', '+919999000001', 'hi-IN', '+919074839967', current_timestamp()
 );
 
 INSERT INTO bricksiitm.rx_helper.drug_timetable VALUES

@@ -90,7 +90,7 @@ Open `http://localhost:8000`, click the **🎬 demo** button (top-right), and fo
 
 ```bash
 databricks bundle deploy --target dev      # creates Unity Catalog tables, app, secrets
-databricks bundle run rx_helper_app        # starts the FastAPI app on Databricks Apps
+databricks bundle run ingest_cdsco         # ingest CSVs → Delta + build Vector Search index
 ```
 
 The bundle (`databricks.yml`, `resources/jobs.yml`) provisions:
@@ -99,6 +99,8 @@ The bundle (`databricks.yml`, `resources/jobs.yml`) provisions:
 - Databricks App with secrets bound via `valueFrom` (Sarvam, Bolna keys never in code)
 
 Notebooks `notebooks/01_ingest_cdsco.py` and `notebooks/02_build_vector_index.py` are the ingest jobs.
+
+> **Full step-by-step deploy guide → [`DEPLOY.md`](DEPLOY.md)** (auth, secret scope setup, bundle deploy, ingest job, warehouse binding, Bolna agent config, troubleshooting).
 
 ---
 
