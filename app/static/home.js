@@ -29,7 +29,7 @@
         ? bi(`You have ${medCount} medicines on file.`, `आपके पास ${medCount} दवाइयाँ हैं।`)
         : bi('No medicines yet — scan a prescription to begin.', 'अभी कोई दवा नहीं — पर्ची स्कैन कीजिए।');
 
-      // ── Demo override: if /scan_result set a 45s anchor, show that countdown
+      // ── Demo override: if /scan_result set a 20s anchor, show that countdown
       const anchorTs = parseInt(localStorage.getItem('rx_next_dose_ts') || '0', 10);
       const anchorDrug = localStorage.getItem('rx_next_dose_drug');
       if (anchorTs && anchorDrug) {

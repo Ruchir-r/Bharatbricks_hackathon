@@ -594,7 +594,7 @@ async def api_flow_take_now(
         phone = guards.check_phone(phone)
         guards.check_drug_name(medicine_name)
         guards.check_lang(_norm_lang(language))
-        guards.check_rate(session_id, limit_per_min=5)
+        guards.check_rate(session_id, limit_per_min=30)
     except guards.GuardError as e:
         return _guard_fail(e)
     try:
@@ -618,7 +618,11 @@ async def api_flow_checkup(
     except guards.GuardError as e:
         return _guard_fail(e)
     try:
-        meds = [m["drug_name"] for m in profile.get_timetable(session_id) if m.get("drug_name")]
+        meds: list[str] = []
+        try:
+            meds = [m["drug_name"] for m in profile.get_timetable(session_id) if m.get("drug_name")]
+        except Exception:
+            pass  # DB unreachable in local dev — call is still placed, just without med list context
         cid = bolna_flows.checkup(phone=phone, patient_name=patient_name, medicines_on_file=meds,
                                   language=_norm_lang(language), session_id=session_id)
         audit.log("bolna_checkup", session_id=session_id, input=phone, output=cid)
@@ -641,7 +645,11 @@ async def api_flow_emergency(
         return _guard_fail(e)
     try:
         loc = f"https://maps.google.com/?q={lat},{lon}" if lat and lon else "(location not shared)"
-        meds = [m["drug_name"] for m in profile.get_timetable(session_id) if m.get("drug_name")]
+        meds: list[str] = []
+        try:
+            meds = [m["drug_name"] for m in profile.get_timetable(session_id) if m.get("drug_name")]
+        except Exception:
+            pass  # DB unreachable — emergency call still goes out
         cid = bolna_flows.emergency(doctor_phone=doctor_phone, patient_name=patient_name,
                                     location_link=loc, medicines_on_file=meds,
                                     patient_phone=patient_phone, language=_norm_lang(language),

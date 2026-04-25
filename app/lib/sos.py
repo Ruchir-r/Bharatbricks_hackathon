@@ -27,7 +27,10 @@ def trigger(
         language="en-IN",
     )
 
-    _log(session_id, loc, emergency_phone)
+    try:
+        _log(session_id, loc, emergency_phone)
+    except Exception:
+        pass  # Delta unreachable — don't fail the SOS just because we couldn't audit-log
     return {"sms_sid": sms_sid, "call_sid": call_sid, "location": loc}
 
 

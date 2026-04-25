@@ -5,7 +5,7 @@
  *   - new medicines list
  *   - alternate Jan Aushadhi brands (RAG via /api/rag)
  *   - combined timesheet (existing + new)
- *   - 45-second next-dose countdown that PERSISTS to home
+ *   - 20-second next-dose countdown that PERSISTS to home
  */
 
 (() => {
@@ -18,11 +18,11 @@
   document.getElementById('visit-summary').textContent =
     `From your visit${scan.doctor ? ' with ' + scan.doctor : ''}${scan.clinic ? ' at ' + scan.clinic : ''}.`;
 
-  // ---- 2. Set the 45s next dose anchor (persisted across pages) ----
+  // ---- 2. Set the 20s next dose anchor (persisted across pages) ----
   const NEXT_DOSE_KEY = 'rx_next_dose_ts';
   let target = parseInt(localStorage.getItem(NEXT_DOSE_KEY) || '0', 10);
   if (!target || target < Date.now()) {
-    target = Date.now() + 45_000;   // 45 seconds from now
+    target = Date.now() + 20_000;   // 20 seconds from now
     localStorage.setItem(NEXT_DOSE_KEY, String(target));
     if (newDrugs.length) {
       const d = newDrugs[0];
@@ -232,7 +232,7 @@
 
   // ---- 6. Hero speak ----
   document.getElementById('hero-speak').addEventListener('click', () => {
-    const text = `Your visit with ${scan.doctor || 'the doctor'} added ${newDrugs.length} new medicines. Next dose in 45 seconds.`;
+    const text = `Your visit with ${scan.doctor || 'the doctor'} added ${newDrugs.length} new medicines. Next dose in 20 seconds.`;
     window.rx.speak(text);
   });
 
@@ -253,9 +253,13 @@
     try {
       const r = await live(`/api/flow/${kind}`, { method: 'POST', body: fd });
       const j = await r.json();
-      const cid = j.call_id || j.error || '(no id)';
-      setBolnaStatus(`✓ call_id: ${cid}`);
-      if (j.call_id) pollStatus(j.call_id);
+      if (j.call_id) {
+        setBolnaStatus(`✓ call_id: ${j.call_id}`);
+        pollStatus(j.call_id);
+      } else {
+        const detail = j.detail || j.error || `HTTP ${r.status}`;
+        setBolnaStatus(`✗ FAILED: ${detail}`);
+      }
     } catch (e) {
       setBolnaStatus(`✗ error: ${e.message}`);
     }
