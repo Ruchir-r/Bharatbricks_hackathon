@@ -73,7 +73,7 @@ def add_chip(slide, x, y, label, *, fill=ACCENT, fg=BG, size=11):
     return shp
 
 
-def footer(slide, slide_no, total=5):
+def footer(slide, slide_no, total=6):
     add_text(slide, Inches(0.5), Inches(7.05), Inches(6), Inches(0.3),
              "Bharosa · भरोसा · Bharat Bricks Hacks 2026 · IIT Madras",
              size=9, color=MUTED)
@@ -173,7 +173,113 @@ footer(s, 2)
 
 
 # ============================================================
-# SLIDE 3 — DATABRICKS ARCHITECTURE (30% — biggest weight)
+# SLIDE 3 — STACK ARCHITECTURE (mirror of README diagram)
+# ============================================================
+s = prs.slides.add_slide(blank)
+add_rect(s, 0, 0, W, H, BG)
+add_rect(s, 0, 0, W, Inches(0.7), NAVY)
+add_text(s, Inches(0.5), Inches(0.15), Inches(12), Inches(0.5),
+         "Stack architecture",
+         size=20, bold=True, color=BG)
+add_text(s, Inches(0.5), Inches(0.78), Inches(12), Inches(0.3),
+         "Patient phone → Databricks Apps → Model Serving + Vector Search + Unity Catalog · last-mile voice via Sarvam + Bolna",
+         size=11, color=MUTED)
+
+# ---- helper for arrow lines ----
+from pptx.enum.shapes import MSO_CONNECTOR
+def arrow(x1, y1, x2, y2, color=NAVY, width=1.5):
+    line = s.shapes.add_connector(MSO_CONNECTOR.STRAIGHT, x1, y1, x2, y2)
+    line.line.color.rgb = color
+    line.line.width = Pt(width)
+    line.line.end_arrow = True  # may be a no-op on some pptx versions
+
+def labeled_box(x, y, w, h, title, body, fill=NAVY, fg=BG, body_color=ORANGE):
+    add_rect(s, x, y, w, h, fill)
+    add_text(s, x + Inches(0.18), y + Inches(0.10), w - Inches(0.36), Inches(0.4),
+             title, size=13, bold=True, color=fg)
+    add_text(s, x + Inches(0.18), y + Inches(0.55), w - Inches(0.36), h - Inches(0.65),
+             body, size=10, color=body_color)
+
+# Top row — patient ↔ apps
+labeled_box(Inches(0.5),  Inches(1.3), Inches(2.6), Inches(1.1),
+            "📱 Patient phone",
+            "PWA · vanilla JS\nHindi · English · Malayalam",
+            fill=LIGHT, fg=INK, body_color=MUTED)
+
+labeled_box(Inches(4.7),  Inches(1.3), Inches(4.0), Inches(1.1),
+            "Databricks Apps",
+            "FastAPI · M2M OAuth\napp/main.py + routers",
+            fill=ACCENT, fg=BG, body_color=BG)
+
+labeled_box(Inches(10.3), Inches(1.3), Inches(2.6), Inches(1.1),
+            "📞 Bolna · 🔊 Sarvam",
+            "Indic voice agent\nBulbul v2 TTS · Saarika ASR",
+            fill=LIGHT, fg=INK, body_color=MUTED)
+
+# Arrows top row
+arrow(Inches(3.1),  Inches(1.85), Inches(4.7),  Inches(1.85))   # phone → apps (request)
+arrow(Inches(4.7),  Inches(2.05), Inches(3.1),  Inches(2.05))   # apps → phone (response)
+arrow(Inches(8.7),  Inches(1.85), Inches(10.3), Inches(1.85))   # apps → bolna/sarvam
+arrow(Inches(10.3), Inches(2.05), Inches(8.7),  Inches(2.05))   # response
+
+# Tiny labels along arrows
+add_text(s, Inches(3.15), Inches(1.55), Inches(1.5), Inches(0.25), "prescription jpg", size=9, color=MUTED)
+add_text(s, Inches(3.15), Inches(2.10), Inches(1.5), Inches(0.25), "bilingual audio + JSON", size=9, color=MUTED)
+add_text(s, Inches(8.75), Inches(1.55), Inches(1.5), Inches(0.25), "user_data", size=9, color=MUTED)
+add_text(s, Inches(8.75), Inches(2.10), Inches(1.5), Inches(0.25), "call · transcript", size=9, color=MUTED)
+
+# Middle band — three big Databricks rails
+band_y = Inches(2.9)
+labeled_box(Inches(0.5),  band_y, Inches(4.0), Inches(2.2),
+            "Mosaic AI Model Serving",
+            ("• llama-4-maverick — vision OCR\n"
+             "• llama-3-3-70b-instruct — reasoning\n"
+             "• gte-large-en — embeddings"),
+            fill=NAVY)
+
+labeled_box(Inches(4.7),  band_y, Inches(4.0), Inches(2.2),
+            "Mosaic AI Vector Search",
+            ("• endpoint  hack_cdsco_endpoint\n"
+             "• Delta-sync  cdsco_approved_idx\n"
+             "• CDC enabled · grounded RAG"),
+            fill=NAVY)
+
+labeled_box(Inches(8.9),  band_y, Inches(4.0), Inches(2.2),
+            "Unity Catalog · Delta Lake",
+            ("• cdsco_approved / banned / nsq_alerts / fdc\n"
+             "• nlem_2022 (650) · pmbjp_catalog (2,438)\n"
+             "• drug_aliases (43) · drug_food (35)\n"
+             "• patient_sessions · drug_timetable\n"
+             "• side_effect_log · sos_events\n"
+             "• inference_log  ← MLflow-style audit"),
+            fill=NAVY)
+
+# Connect Apps → middle band
+arrow(Inches(6.7), Inches(2.4), Inches(2.5),  band_y)            # apps → model serving
+arrow(Inches(6.7), Inches(2.4), Inches(6.7),  band_y)            # apps → vector search
+arrow(Inches(6.7), Inches(2.4), Inches(10.9), band_y)            # apps → unity catalog
+
+# Vector Search ↔ UC retrieval
+arrow(Inches(8.7), band_y + Inches(1.0), Inches(8.9), band_y + Inches(1.0))
+add_text(s, Inches(8.75), band_y + Inches(0.65), Inches(0.4), Inches(0.25), "↔ retrieval", size=8, color=ORANGE)
+
+# Bottom band — deploy + audit
+deploy_y = Inches(5.4)
+labeled_box(Inches(0.5),  deploy_y, Inches(6.1), Inches(1.3),
+            "Deploy · Databricks Asset Bundles",
+            "databricks bundle deploy   →   ingest job + Vector Search + App + secrets in one shot",
+            fill=ORANGE, fg=BG, body_color=BG)
+
+labeled_box(Inches(6.8),  deploy_y, Inches(6.1), Inches(1.3),
+            "Audit · inference_log Delta table",
+            "every LLM call: prompt · model · latency · tokens · citation set · session_id",
+            fill=GREEN, fg=BG, body_color=BG)
+
+footer(s, 3)
+
+
+# ============================================================
+# SLIDE 4 — DATABRICKS DEEP DIVE (30% — biggest weight)
 # ============================================================
 s = prs.slides.add_slide(blank)
 add_rect(s, 0, 0, W, H, BG)
@@ -235,11 +341,11 @@ dl_card(Inches(8.0), Inches(4.75),
         "patient_sessions · drug_timetable · side_effect_log · sos_events · bolna_call_outcomes · inference_log (every LLM call: prompt, model, latency, tokens, citations)",
         RED)
 
-footer(s, 3)
+footer(s, 4)
 
 
 # ============================================================
-# SLIDE 4 — ACCURACY & SAFETY (25%)
+# SLIDE 5 — ACCURACY & SAFETY (25%)
 # ============================================================
 s = prs.slides.add_slide(blank)
 add_rect(s, 0, 0, W, H, BG)
@@ -296,11 +402,11 @@ add_text(s, right_x + Inches(0.2), Inches(5.85), Inches(5.1), Inches(0.9),
          "Every LLM call (OCR, reasoning, explainer) appended to inference_log Delta table:\nprompt · model · latency · tokens · citation set · session_id",
          size=10, color=INK)
 
-footer(s, 4)
+footer(s, 5)
 
 
 # ============================================================
-# SLIDE 5 — DEMO MOMENT + ASKS
+# SLIDE 6 — DEMO MOMENT + ASKS
 # ============================================================
 s = prs.slides.add_slide(blank)
 add_rect(s, 0, 0, W, H, BG)
@@ -340,7 +446,7 @@ add_text(s, Inches(0.6), Inches(6.3), Inches(12), Inches(0.6),
          "It's not a translator. It's a trust layer.",
          size=24, bold=True, color=NAVY, align=PP_ALIGN.CENTER)
 
-footer(s, 5)
+footer(s, 6)
 
 
 # ---------- save ----------
