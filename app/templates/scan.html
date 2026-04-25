@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}स्कैन / Scan{% endblock %}
+{% block content %}
+<h1 class="page-title">पर्ची या दवाई की फ़ोटो</h1>
+
+<div class="stepper" aria-label="Progress">
+  <div class="step current" data-step="1">1</div>
+  <div class="step" data-step="2">2</div>
+  <div class="step" data-step="3">3</div>
+</div>
+
+<div class="choice-row" role="radiogroup" aria-label="Scan type">
+  <button class="choice active" data-mode="prescription" type="button">
+    <span class="choice-icon">📝</span><span>पर्ची</span>
+  </button>
+  <button class="choice" data-mode="drug_label" type="button">
+    <span class="choice-icon">💊</span><span>दवाई का पत्ता</span>
+  </button>
+</div>
+
+<label class="file-upload" id="file-upload">
+  <span class="upload-icon" aria-hidden="true">📷</span>
+  <span class="upload-text">फ़ोटो चुनें या खींचें</span>
+  <input type="file" id="scan-file" accept="image/*" capture="environment" hidden>
+</label>
+
+<img id="preview" class="preview hidden" alt="">
+
+<button class="btn btn-primary" id="scan-btn" disabled>
+  <span aria-hidden="true">🔎</span> जाँच करें
+</button>
+
+<div id="result" class="result-zone" aria-live="polite"></div>
+
+<template id="drug-card-tpl">
+  <article class="card drug-card">
+    <h3 class="drug-name"></h3>
+    <div class="verdict"></div>
+    <audio controls class="drug-audio hidden"></audio>
+    <button class="speak-btn drug-speak">🔊 सुनें</button>
+  </article>
+</template>
+{% endblock %}
+{% block scripts %}
+<script src="/static/scan.js"></script>
+{% endblock %}

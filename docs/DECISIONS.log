@@ -1,0 +1,156 @@
+# Rx Helper — Append-only decision log
+#
+# FORMAT:   <ISO-8601-timestamp>\t<author>\t<TYPE>\t<message>
+# RULES:    (1) Append only. Never edit or delete a previous line.
+#           (2) Wall-clock timestamps, IST (+05:30). Use `date -u +"%Y-%m-%dT%H:%M:%S+05:30"` if unsure.
+#           (3) Authors: ruchir | bs23b014 | harshit | ruchir-agent | bs-agent | harshit-agent
+#               Agents MUST suffix `-agent` so humans can tell them apart.
+#           (4) Latest entry wins when in conflict with TEAMMATES sections marked FROZEN.
+#           (5) Sections NOT marked FROZEN are guidance; the log only overrides FROZEN sections.
+#
+# TYPES:
+#   DECISION   - architectural or design choice (overrides TEAMMATES FROZEN sections on conflict)
+#   SCOPE-IN   - feature accepted into scope
+#   SCOPE-OUT  - feature removed from scope
+#   OWNER      - ownership assignment / transfer
+#   EDIT       - file is being edited right now (acts as a soft lock)
+#   DONE       - finished a task; clears any EDIT lock by same author on same file
+#   BLOCKED    - stuck, needs help; tag who can unblock
+#   PROPOSE    - suggested change to a FROZEN surface; does NOT take effect until RESOLVED
+#   RESOLVE    - Ruchir's ruling on a PROPOSE; ACCEPT or REJECT with reason
+#   CONFLICT   - you noticed two instructions disagree; include both and who's involved
+#   QUESTION   - open question, include who should answer
+#   DEMO-PREP  - demo or rehearsal note
+#
+# SHORTCUTS:
+#   append-decision() { printf '%s\t%s\t%s\t%s\n' "$(date -u +"%Y-%m-%dT%H:%M:%S+05:30")" "$1" "$2" "$3" >> DECISIONS.log; }
+#   tail -n 20 DECISIONS.log    # read recent state before making changes
+#
+# =============================================================================
+2026-04-25T14:00:00+05:30	ruchir	DECISION	Project scaffolded on Databricks workspace dbc-05f8e797-e2fa. Catalog=bricksiitm, schema=rx_helper.
+2026-04-25T14:00:00+05:30	ruchir	DECISION	Pivoted from Streamlit to FastAPI + static HTML/CSS at Harshit's request (see TEAMMATES §2 H-tasks).
+2026-04-25T14:00:00+05:30	ruchir	OWNER	ruchir owns infra + integration + demo (TEAMMATES §1).
+2026-04-25T14:00:00+05:30	ruchir	OWNER	bs23b014 owns app/lib/*.py + notebooks/ + data/ + SQL (TEAMMATES §1).
+2026-04-25T14:00:00+05:30	ruchir	OWNER	harshit owns app/templates/ + app/static/ + icons + Hindi copy + demo assets (TEAMMATES §1).
+2026-04-25T14:00:00+05:30	ruchir	DECISION	API surface at /api/* is FROZEN (TEAMMATES §5). Changes require PROPOSE → RESOLVE protocol.
+2026-04-25T14:00:00+05:30	ruchir	SCOPE-IN	MLflow inference audit logging (brings Databricks feature count to 14).
+2026-04-25T14:00:00+05:30	ruchir	SCOPE-OUT	Lakeflow Declarative Pipelines — too much setup for 24h.
+2026-04-25T14:00:00+05:30	ruchir	SCOPE-OUT	AI Functions SQL view — stretch only.
+2026-04-25T14:00:00+05:30	ruchir	SCOPE-OUT	Lakebase Postgres migration — too much for 24h.
+2026-04-25T14:00:00+05:30	ruchir	SCOPE-OUT	Production-grade Indian telecom calls — DLT registration is weeks. Twilio US trial is the demo path.
+2026-04-25T14:00:00+05:30	ruchir	DECISION	Cost-generating resources (VS endpoint, SQL warehouse, App) may only be created by ruchir.
+2026-04-25T16:00:00+05:30	ruchir	DECISION	BS23B014 will NOT work on code. Their tasks D1–D9 in TEAMMATES §2 are non-code (Hindi QA, demo prescriptions, slides, video, phone test, pitch, logistics).
+2026-04-25T16:00:00+05:30	ruchir	OWNER	All code previously in BS23B014's lane (app/lib/*.py, notebooks/, data/, SQL) moves to ruchir. TEAMMATES §1 updated.
+2026-04-25T16:00:00+05:30	ruchir-agent	EDIT	TEAMMATES.md  eta=2m
+2026-04-25T16:00:00+05:30	ruchir-agent	DONE	TEAMMATES.md
+2026-04-25T16:05:00+05:30	ruchir-agent	EDIT	data/nlem_essential.csv data/cdsco_approved.csv data/cdsco_banned.csv data/cdsco_nsq_alerts.csv data/cdsco_fdc_approved.csv data/pmbjp_prices.csv  eta=20m  reason=seed demo-coherent dataset (paracetamol/amoxicillin safe; cefixime NSQ-flagged; paracetamol+flupirtine banned)
+2026-04-25T16:15:00+05:30	ruchir-agent	DONE	data/nlem_essential.csv (70 rows)
+2026-04-25T16:15:00+05:30	ruchir-agent	DONE	data/cdsco_approved.csv (51 rows)
+2026-04-25T16:15:00+05:30	ruchir-agent	DONE	data/cdsco_banned.csv (20 rows incl. 14 2023-FDC bans + paracetamol+flupirtine for demo)
+2026-04-25T16:15:00+05:30	ruchir-agent	DONE	data/cdsco_nsq_alerts.csv (20 rows incl. cefixime batch CXM2509A for demo)
+2026-04-25T16:15:00+05:30	ruchir-agent	DONE	data/cdsco_fdc_approved.csv (20 rows)
+2026-04-25T16:15:00+05:30	ruchir-agent	DONE	data/pmbjp_prices.csv (40 rows)
+2026-04-25T16:15:00+05:30	ruchir	DECISION	Seed datasets are "realistic synthetic" — not scraped from cdsco.gov.in but coherent for demo. R5 (real CDSCO extraction) becomes optional if quality is sufficient.
+2026-04-25T16:20:00+05:30	ruchir	OWNER	Harshit reassigned to EVAL as primary task (eval/ directory). Frontend H-tasks become secondary. TEAMMATES §2 updated.
+2026-04-25T16:20:00+05:30	ruchir	DECISION	eval/ directory belongs to harshit lane. eval/run_eval.py + eval/grade.py + eval/cases.json are Harshit-only edits. app/lib/ and app/main.py remain forbidden.
+2026-04-25T16:20:00+05:30	ruchir-agent	DONE	TEAMMATES.md (reassignment to eval)
+2026-04-25T16:20:00+05:30	ruchir-agent	DONE	TODO.md (initial tracker created)
+2026-04-25T16:45:00+05:30	ruchir	DECISION	SP 74ba8c46-8894-4517-99d8-8026f2868df0 (app-41fqao rx-helper) granted: USE_CATALOG on bricksiitm; USE_SCHEMA/SELECT/MODIFY/READ_VOLUME/WRITE_VOLUME on bricksiitm.rx_helper; READ on secret rx-helper.
+2026-04-25T16:45:00+05:30	ruchir	DECISION	Data validity policy: reference tables are curated synthetic from public-domain knowledge + real notification references. drug_sources table ties rows to authoritative citations (NLEM 2022 PDF, CDSCO gazette numbers, PMBJP product list).
+2026-04-25T16:45:00+05:30	ruchir-agent	DONE	data/drug_sources.csv (30 rows with source_url + retrieved_at + verified flag)
+2026-04-25T16:45:00+05:30	ruchir-agent	DONE	app/lib/guards.py (input validation, output schema, safety rules, rate limit, PII hash, fuzzy threshold, placeholder guard)
+2026-04-25T16:45:00+05:30	ruchir-agent	DONE	app/main.py (wired guards into every endpoint; hard-block banned drugs; force disclaimers; refuse model-invented doses)
+2026-04-25T16:45:00+05:30	ruchir-agent	EDIT	app deployment  eta=3m  reason=push guards + drug_sources table live
+2026-04-25T16:45:00+05:30	ruchir	DECISION	Open items tracked: Sarvam key (R1), Twilio creds (R2), stop VS endpoint when not testing (cost), real CDSCO PDF scrape optional upgrade.
+2026-04-25T17:10:00+05:30	ruchir-agent	DONE	app/lib/sarvam.py (graceful degrade; is_configured() + SarvamUnavailable)
+2026-04-25T17:10:00+05:30	ruchir-agent	DONE	app/lib/explainer.py (falls back to English + browser TTS when Sarvam not ready)
+2026-04-25T17:10:00+05:30	ruchir-agent	DONE	app/lib/profile.py (session + timetable + checkins + next_dose)
+2026-04-25T17:10:00+05:30	ruchir-agent	DONE	app/lib/ask.py (/api/ask patient Q&A; RAG over profile + CDSCO with strict safety prompt)
+2026-04-25T17:10:00+05:30	ruchir-agent	DONE	app/main.py (added /api/profile + /api/ask; /api/health now reports sarvam_configured + languages list)
+2026-04-25T17:10:00+05:30	ruchir-agent	DONE	app/templates/home.html (dashboard — name, next dose, meds, checkins, ask)
+2026-04-25T17:10:00+05:30	ruchir-agent	DONE	app/static/home.js + app.js (bilingual en/hi default; browser lang detect; Sarvam fallback in speak())
+2026-04-25T17:10:00+05:30	ruchir-agent	DONE	eval/seed_demo.sql + eval/smoke_test.py (demo patient Rina Devi + 11 endpoint tests)
+2026-04-25T17:10:00+05:30	ruchir	DECISION	Default UI language: English; browser-hi-locale auto-picks Hindi; manual toggle cycles en↔hi.
+2026-04-25T17:10:00+05:30	ruchir	DECISION	Sarvam is optional. App works fully in English without Sarvam; Hindi degrades to browser TTS + English text fallback when key missing.
+2026-04-25T17:15:00+05:30	ruchir	DECISION	Seed: demo-patient-001 inserted (Rina Devi, 3 meds: amlodipine 5mg OD / metformin 500mg BD / paracetamol 500mg PRN; 2 side-effect logs).
+2026-04-25T17:20:00+05:30	ruchir	DECISION	Cross-update on harshit: E1 (cases.json, 16 cases), E3 (run_eval.py), E4 (grade.py), README and 3 Kaggle prescription fixtures committed to /Shared/rx_helper/eval/. Harshit has NOT logged DECISIONS.log entries himself — protocol gap noted.
+2026-04-25T17:20:00+05:30	ruchir	OWNER	harshit-agent (implicit): all edits confined to eval/ directory. Lane respected.
+2026-04-25T17:20:00+05:30	ruchir	BLOCKED	eval/fixtures/synth_multi.png and fixtures/label_paracetamol.jpg are placeholders per harshit's README — blocks SCAN-004/SCAN-005.
+2026-04-26T01:55:00+05:30	ruchir	DECISION	Voice backend swapped: Bolna (India DLT-ready) replaces Twilio as primary for /api/reminder. Twilio kept only as fallback if BOLNA_API_KEY missing.
+2026-04-26T01:55:00+05:30	ruchir	DECISION	Sarvam TTS results cached to UC Volume audio_cache by sha256(text|lang). Preserves free-tier quota on repeated demo plays.
+2026-04-26T01:55:00+05:30	ruchir	DECISION	REMINDER_LIVE=0 env default — place_call returns a dryrun id rather than hitting Bolna. Flip to 1 only during live demo to preserve credits.
+2026-04-26T01:55:00+05:30	ruchir-agent	DONE	app/lib/bolna.py (wrapper with is_configured + place_call)
+2026-04-26T01:55:00+05:30	ruchir-agent	DONE	app/lib/reminder.py (Bolna primary, Twilio fallback, dryrun gate)
+2026-04-26T01:55:00+05:30	ruchir-agent	DONE	app/lib/sarvam.py (TTS cache on audio_cache volume)
+2026-04-26T01:55:00+05:30	ruchir-agent	DONE	app/app.yaml (added BOLNA_API_KEY, BOLNA_AGENT_ID, REMINDER_LIVE env vars)
+2026-04-26T01:55:00+05:30	ruchir-agent	DONE	secrets rx-helper/sarvam-api-key + bolna-api-key + bolna-agent-id (real values)
+2026-04-26T01:55:00+05:30	ruchir-agent	DONE	eval/fixtures/synth_multi.png + label_paracetamol.jpg (generated via PIL — unblocks SCAN-004, SCAN-005)
+2026-04-26T01:55:00+05:30	ruchir	DECISION	Test policy for live API keys: exactly ONE Sarvam call round per verification (translate + tts); ZERO Bolna calls until live demo. Cache amortizes repeated plays.
+2026-04-26T02:35:00+05:30	ruchir-agent	DONE	eval/run_eval_direct.py (in-process bridge — bypasses App OAuth gate; same lib code path)
+2026-04-26T02:35:00+05:30	ruchir-agent	DONE	app/lib/llm_client.py (REST wrapper around model serving; replaces buggy SDK serving_endpoints.query)
+2026-04-26T02:35:00+05:30	ruchir-agent	DONE	app/lib/{drug_identifier,drug_conflict,explainer,survey,ask}.py (switched to llm_client; vision endpoint = databricks-llama-4-maverick)
+2026-04-26T02:35:00+05:30	ruchir-agent	DONE	app/lib/sarvam.py (speaker meera→anushka, model→bulbul:v2)
+2026-04-26T02:35:00+05:30	ruchir-agent	DONE	app/lib/trust_check.py (single-component ban filter, batch-gated NSQ flag)
+2026-04-26T02:35:00+05:30	ruchir-agent	DONE	cdsco_banned table: inserted flupirtine standalone (historically correct since EMA-2018 / CDSCO mirror)
+2026-04-26T02:35:00+05:30	ruchir-agent	DONE	app/main.py (lang normalize en→en-IN; echoes caller form; soft_text in /api/interactions; auto image MIME via magic bytes)
+2026-04-26T02:35:00+05:30	ruchir-agent	DONE	eval results.json + scorecard.md committed (14/16 cases pass, 33/36 checks, 3/3 demo-critical)
+2026-04-26T02:35:00+05:30	ruchir	DECISION	Eval API spend this session: 9 vision + 8 LLM + 3 Sarvam-translate + 4 Sarvam-TTS + 0 Bolna. TTS cache populated for paracetamol/amoxicillin/metformin in en+hi → demo replays free.
+2026-04-26T02:35:00+05:30	ruchir	BLOCKED	2 non-demo-critical eval failures pending Harshit edits to cases.json (typo in SCAN-001 expect; broader contains_any list for EXPLAIN-003).
+2026-04-26T03:55:00+05:30	ruchir-agent	DONE	app/lib/explainer.py (full-pipeline volume cache: drug|dose|lang → {english, translated, audio_b64})
+2026-04-26T03:55:00+05:30	ruchir-agent	DONE	app/lib/audit.py + main.py wiring (every /api/explain writes a row to inference_log Delta)
+2026-04-26T03:55:00+05:30	ruchir-agent	DONE	app/main.py POST /api/warmup + GET /demo redirect
+2026-04-26T03:55:00+05:30	ruchir-agent	DONE	templates/base.html (🔥 warmup + 🎬 demo header buttons) + static/app.js (warmup handler with progress + alert)
+2026-04-26T03:55:00+05:30	ruchir	DECISION	Pipeline cache pre-filled for paracetamol/amoxicillin/cefixime/metformin × en+hi. Demo replays of these = 0 external API calls. Spend to fill: 8 LLM + 4 translate + 8 TTS = 20 calls (one-time).
+2026-04-26T03:55:00+05:30	ruchir	DECISION	Live-demo policy: presenter clicks 🔥 once before demo (idempotent — cache hits skip work); 🎬 jumps to demo session for Rina Devi.
+2026-04-26T05:55:00+05:30	ruchir-agent	DONE	app/lib/rag.py (multi-source retrieval — 7 Delta tables, structured citations, confidence scoring)
+2026-04-26T05:55:00+05:30	ruchir-agent	DONE	app/lib/guards.py extensions (5 new anti-hallucination guards: confidence_refuse, verify_grounded, verify_no_invented_numbers, redact_or_refuse, self_check_prompt)
+2026-04-26T05:55:00+05:30	ruchir-agent	DONE	app/lib/ask.py full rewrite — RAG-grounded with explicit citation enforcement
+2026-04-26T05:55:00+05:30	ruchir-agent	DONE	app/lib/capabilities.py — 6 new features (refill_alert, food_warnings, scheme_eligibility, pharmacies_near, savings_summary, care_card_html)
+2026-04-26T05:55:00+05:30	ruchir-agent	DONE	app/lib/agent.py — lightweight intent classifier + 7-branch dispatcher
+2026-04-26T05:55:00+05:30	ruchir-agent	DONE	app/main.py + 7 new endpoints (/api/refill_alert, /api/food_warnings, /api/scheme_eligibility, /api/pharmacy_locator, /api/savings_summary, /api/care_card, /api/agent, /api/rag)
+2026-04-26T05:55:00+05:30	ruchir-agent	DONE	3 new Delta tables: drug_food (35), govt_schemes (10), pmbjp_locations (30)
+2026-04-26T05:55:00+05:30	ruchir-agent	DONE	templates/home.html — 5 new collapsible support cards + care card link
+2026-04-26T05:55:00+05:30	ruchir-agent	DONE	static/home.js + styles.css + fallbacks.js — handlers, styling, 7 new fixtures
+2026-04-26T05:55:00+05:30	ruchir-agent	DONE	eval/ui_test.py — Playwright + Chromium-headless suite, 22 assertions, all green
+2026-04-26T05:55:00+05:30	ruchir-agent	DONE	eval/screenshots/01..07 — captured demo flow screenshots
+2026-04-26T05:55:00+05:30	ruchir	BUG-KNOWN	savings_summary dose-time parsing over-counts when ARRAY<STRING> returned as string by sql connector. DEMO mode unaffected (uses fixture).
+2026-04-26T05:55:00+05:30	ruchir	DECISION	Token spend this 2h block: 0 Sarvam, 0 Bolna, ~10 LLM (in-workspace foundation, free). Cumulative session well under 250-call cap.
+2026-04-26T05:55:00+05:30	ruchir-agent	DONE	REPORT.md (this block's full report)
+2026-04-26T11:55:00+05:30	ruchir-agent	DONE	app/static/translations.json (54 UI strings × 3 languages: en, hi, ml — hand-curated, cached)
+2026-04-26T11:55:00+05:30	ruchir-agent	DONE	app/static/i18n.js (runtime page-wide translator: TreeWalker + MutationObserver + attribute support)
+2026-04-26T11:55:00+05:30	ruchir-agent	DONE	templates/base.html — replaced lang cycle button with EN/हिं/മല dropdown
+2026-04-26T11:55:00+05:30	ruchir-agent	DONE	app/static/fallbacks.js — extended /api/ask fixture map with Malayalam answers for every chip
+2026-04-26T11:55:00+05:30	ruchir-agent	DONE	eval/ui_test.py — added 3 language-switch assertions; 24/25 pass (1 cosmetic residual ml glyph)
+2026-04-26T11:55:00+05:30	ruchir	DECISION	Languages live: EN, HI, ML. Hand-curated translations (zero Sarvam spend on UI strings). Demo answers per chip pre-translated to 3 languages. Future: extend translations.json + add ta-IN.
+2026-04-26T11:55:00+05:30	ruchir-agent	DONE	SHARE.html rebuilt with 10 screenshots incl. 3 language-switch states
+2026-04-26T12:05:00+05:30	teammate	UPLOAD	Teammate (likely BS23B014) uploaded real datasets to /Shared/rx_helper/data/: nlem2022.pdf (135 pages, official MoHFW), Product List_25_4_2026 (Jan Aushadhi catalog, 2438 SKUs)
+2026-04-26T12:05:00+05:30	ruchir-agent	DONE	scripts/extract_nlem_pdf.py — pdfplumber-based parser; 650 structured rows extracted from real NLEM 2022 PDF
+2026-04-26T12:05:00+05:30	ruchir-agent	DONE	data/nlem_2022_real.csv (650 rows: section, drug_name, level_p/s/t, dosage_forms, page) ingested → bricksiitm.rx_helper.nlem_2022_real
+2026-04-26T12:05:00+05:30	ruchir-agent	DONE	data/pmbjp_catalog_real.csv (2438 rows: drug_code, generic_name, unit_size, mrp, group_name) ingested → bricksiitm.rx_helper.pmbjp_catalog_real
+2026-04-26T12:05:00+05:30	ruchir-agent	DONE	app/lib/rag.py — pmbjp_catalog_real preferred over pmbjp_prices; nlem_2022_real preferred over nlem_essential. Synthetic kept as fallback for any rows the real catalog doesn't cover.
+2026-04-26T12:05:00+05:30	ruchir-agent	DONE	drug_sources: 2 new provenance rows (__nlem_2022_pdf__, __pmbjp_catalog__) with the real source URLs
+2026-04-26T12:05:00+05:30	ruchir	DECISION	Lakehouse now has REAL CDSCO-adjacent data: NLEM 2022 (650 rows from official PDF) + Jan Aushadhi (2438 real product entries). RAG queries them by default; demo continues to work because synthetic fallback chains gracefully when real data is absent.
+2026-04-26T12:15:00+05:30	ruchir-agent	DONE	app/lib/bolna.py — full rewrite per user template: format_phone_number, BolnaTrialRestriction, get_call_status with success/failure keyword detection
+2026-04-26T12:15:00+05:30	ruchir-agent	BUG-FIXED	bolna.place_call was reading wrong response field. Bolna actually returns execution_id/run_id, NOT call_id. Status endpoint is /executions/{id} not /call/{id}. Both fixed.
+2026-04-26T12:15:00+05:30	ruchir-agent	DONE	app/lib/voice_reminder.py — TTS automation, hand-curated en/hi/ml templates, Sarvam-cached
+2026-04-26T12:15:00+05:30	ruchir-agent	DONE	app/main.py — 3 new endpoints: /api/voice_reminder, /api/call_reminder, /api/call_status
+2026-04-26T12:15:00+05:30	ruchir-agent	DONE	timetable.js — speak button now calls /api/voice_reminder; call button now uses /api/call_reminder with full Bolna context (drug/dose/timing/patient_name)
+2026-04-26T12:15:00+05:30	ruchir-agent	BOLNA-TEST	Test call to +919074839967 succeeded. execution_id=0bf8e70a-bb29-404d-ab1e-658bbde9bc04. status=completed. duration=1s. recording_url stored. 53-line transcript. Phone number is verified on Bolna dashboard (no TrialRestriction).
+2026-04-26T12:15:00+05:30	ruchir	DECISION	Bolna integration considered live-ready. /api/call_reminder + /api/call_status callable from UI; reminder.py fully wired.
+2026-04-26T13:30:00+05:30	ruchir-agent	DONE	Vision OCR of sample_prescription.jpeg via databricks-llama-4-maverick → 4 drugs extracted, inserted into Rina Devi's drug_timetable + prescription_scans
+2026-04-26T13:30:00+05:30	ruchir-agent	DONE	emergency_contact_phone updated to +919074839967 (Dr. Saab) for demo-patient-001
+2026-04-26T13:30:00+05:30	ruchir-agent	DONE	app/lib/bolna_flows.py — 3 flows (take_now, checkup, emergency) with full prompt template documented
+2026-04-26T13:30:00+05:30	ruchir-agent	DONE	app/main.py — /api/flow/{take_now,checkup,emergency} + /bolna_webhook?token=… endpoints
+2026-04-26T13:30:00+05:30	ruchir-agent	DONE	bricksiitm.rx_helper.bolna_call_outcomes Delta sink created + secret bolna-webhook-token set + app.yaml resource block extended
+2026-04-26T13:30:00+05:30	ruchir-agent	DONE	Bolna agent webhook_url PATCHed via /v2/agent/{id} PATCH (HTTP 200 success)
+2026-04-26T13:30:00+05:30	ruchir-agent	BOLNA-TEST	3 live calls placed to Dr. Saab (+919074839967): take_now=c11efab9, checkup=db5674d1, emergency=d3b6feef. All reached Bolna; recording URLs captured.
+2026-04-26T13:30:00+05:30	ruchir	DECISION	REMINDER_LIVE=1 in app.yaml — live demo will fire real Bolna calls. DEMO MODE on UI still serves cached IDs for instant replay.
+2026-04-26T13:30:00+05:30	ruchir	DECISION	Model substitution policy: free DBX foundation for ALL reasoning/vision/embedding; Sarvam ONLY for Indic translate+TTS+ASR; Bolna for outbound calls.
+2026-04-26T14:08:00+05:30	ruchir-agent	DONE	data/drug_aliases.csv (43 rows: typo→clean-brand+molecule mapping for common Indian formulary)
+2026-04-26T14:08:00+05:30	ruchir-agent	DONE	bricksiitm.rx_helper.drug_aliases Delta table (read_files ingestion, 43 rows)
+2026-04-26T14:08:00+05:30	ruchir-agent	DONE	app/lib/drug_identifier.py — _alias_lookup() (exact + rapidfuzz fuzzy match) used BEFORE LLM normalisation; LLM only called for non-alias hits
+2026-04-26T14:08:00+05:30	ruchir-agent	BENCHMARK	Live OCR + normalize: vision 8.5s + normalize 25s = 33s wall-clock. 0 LLM calls when all 4 drugs hit alias. SQL cross-ref dominates (12 queries × 2s on serverless).
+2026-04-26T14:08:00+05:30	ruchir-agent	DONE	price_comparison field on each normalized drug (3 tiers: PMBJP / pharmacy generic / typical branded — branded estimated at 7.5× PMBJP)
+2026-04-26T14:08:00+05:30	ruchir-agent	DONE	scan_result.js — collapsible price-comparison table with "Save up to ₹X" line
+2026-04-26T14:08:00+05:30	ruchir-agent	DONE	checkin.js + home.js — voice-input flag triggers TTS auto-play; text input keeps optional 🔊 button (per user spec)
+2026-04-26T14:08:00+05:30	ruchir-agent	DONE	app/requirements.txt added rapidfuzz dependency

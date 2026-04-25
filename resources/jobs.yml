@@ -1,0 +1,25 @@
+resources:
+  jobs:
+    ingest_cdsco:
+      name: cdsco-ingest
+      tasks:
+        - task_key: ingest_delta
+          notebook_task:
+            notebook_path: ../notebooks/01_ingest_cdsco.py
+            base_parameters:
+              catalog: ${var.catalog}
+              schema: ${var.schema}
+        - task_key: build_vector_index
+          depends_on:
+            - task_key: ingest_delta
+          notebook_task:
+            notebook_path: ../notebooks/02_build_vector_index.py
+            base_parameters:
+              catalog: ${var.catalog}
+              schema: ${var.schema}
+
+  apps:
+    rx_helper:
+      name: rx-helper
+      source_code_path: ../app
+      description: "CDSCO-backed prescription trust + explainer for low-literacy patients"

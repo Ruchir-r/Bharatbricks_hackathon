@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}SOS{% endblock %}
+{% block content %}
+<h1 class="page-title sos-title">🚨 आपातकाल / Emergency</h1>
+
+<p class="big-text" id="sos-headline">Tap the red button to call <strong id="sos-contact-name">Dr. Saab</strong> instantly.</p>
+<p class="muted" id="sos-contact-line">📞 <span id="sos-contact-phone">+91 9074839967</span></p>
+
+<button class="btn btn-secondary" id="locate-btn">
+  <span aria-hidden="true">📍</span> Share my location · अपनी जगह भेजें
+</button>
+<p id="loc-status" class="muted" aria-live="polite"></p>
+
+<button class="btn btn-danger btn-hero" id="sos-btn" style="font-size: var(--fs-hero); min-height: 96px; margin-top: 16px;">
+  <span aria-hidden="true">🚨</span><span>SEND SOS</span>
+</button>
+
+<details class="card" style="margin-top: 16px;">
+  <summary class="card-title" style="cursor:pointer">⚙ Edit details (optional)</summary>
+  <label class="field-label" for="pname">Your name</label>
+  <input id="pname" class="text-input" type="text" placeholder="...">
+
+  <label class="field-label" for="ephone">Emergency contact (Dr. Saab)</label>
+  <input id="ephone" class="text-input" type="tel" inputmode="tel">
+
+  <label class="field-label" for="note">Note (optional · वैकल्पिक)</label>
+  <textarea id="note" class="text-input" rows="2" placeholder="मुझे चक्कर आ रहा है…"></textarea>
+</details>
+
+<div id="sos-result" class="result-zone" aria-live="polite"></div>
+
+<p class="disclaimer">
+  This will send an SMS + voice call to your emergency contact with your location.<br>
+  यह आपके आपातकालीन संपर्क को SMS + कॉल भेजेगा।
+</p>
+{% endblock %}
+{% block scripts %}
+<script src="/static/sos.js"></script>
+{% endblock %}

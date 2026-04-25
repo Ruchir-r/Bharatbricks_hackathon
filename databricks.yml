@@ -1,0 +1,24 @@
+bundle:
+  name: cdsco_rx_helper
+
+variables:
+  catalog:
+    default: bricksiitm
+  schema:
+    default: rx_helper
+  sarvam_api_key:
+    default: ""
+  twilio_account_sid:
+    default: ""
+  twilio_auth_token:
+    default: ""
+  twilio_from_number:
+    default: ""
+
+targets:
+  dev:
+    default: true
+    mode: development
+
+include:
+  - resources/*.yml

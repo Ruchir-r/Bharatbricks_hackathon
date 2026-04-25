@@ -1,0 +1,21 @@
+drug_name,batch_no,manufacturer,alert_date,reason,state,source_report
+cefixime,CXM2509A,Suneet Pharmaceuticals,2026-03-15,Assay below 90% limit,Maharashtra,CDSCO-NSQ-2026-03
+paracetamol,PCM8842,Rising Pharma India,2026-02-11,Dissolution failure,Uttar Pradesh,CDSCO-NSQ-2026-02
+amoxicillin,AMX1102B,Medi Heal Labs,2026-02-11,Water content out of limit,Gujarat,CDSCO-NSQ-2026-02
+metformin,MET-55321,Health Globe Pharma,2026-03-15,Related substances above limit,Karnataka,CDSCO-NSQ-2026-03
+amlodipine,AMP775,Zest Remedies,2026-01-18,Content uniformity failure,Tamil Nadu,CDSCO-NSQ-2026-01
+ranitidine,RAN-H2K,Sunrise Formulations,2025-12-20,NDMA contamination above limit,Punjab,CDSCO-NSQ-2025-12
+azithromycin,AZM-3310,Corvus Pharma,2026-03-15,Dissolution failure,Telangana,CDSCO-NSQ-2026-03
+ciprofloxacin,CIP-0989,Alpha Sigma Labs,2026-02-11,Impurity out of limit,West Bengal,CDSCO-NSQ-2026-02
+cotrimoxazole,CTX-2401,Wellcure Remedies,2026-02-11,Assay failure,Madhya Pradesh,CDSCO-NSQ-2026-02
+atorvastatin,ATV-8890,Lifezen Healthcare,2026-01-18,Related substances above limit,Haryana,CDSCO-NSQ-2026-01
+omeprazole,OMP-11A,Medico Labs,2026-03-15,Dissolution failure,Rajasthan,CDSCO-NSQ-2026-03
+ibuprofen,IBU-7721,Unique Therapeutics,2026-02-11,Description failure (discoloration),Andhra Pradesh,CDSCO-NSQ-2026-02
+doxycycline,DOX-3302,Virgo Remedies,2026-01-18,Assay below limit,Kerala,CDSCO-NSQ-2026-01
+metronidazole,MTZ-8819,Kova Pharma,2026-03-15,Water content exceeds limit,Bihar,CDSCO-NSQ-2026-03
+furosemide,FUR-5505,Rapid Remedies,2026-02-11,Content uniformity failure,Odisha,CDSCO-NSQ-2026-02
+fluconazole,FLC-1919,Sunpharma Generic,2026-01-18,Assay failure,Delhi,CDSCO-NSQ-2026-01
+levothyroxine,LVT-7730,Thyrocare Labs,2026-03-15,Potency below 95%,Maharashtra,CDSCO-NSQ-2026-03
+acyclovir,ACV-2026,Viralex Pharma,2026-02-11,Impurity above limit,Gujarat,CDSCO-NSQ-2026-02
+losartan,LOS-6680,Cardia Remedies,2026-01-18,Azido impurity above threshold,Tamil Nadu,CDSCO-NSQ-2026-01
+salbutamol,SAL-INH-99,Inhale Pharma,2026-03-15,Dose per actuation out of spec,Karnataka,CDSCO-NSQ-2026-03

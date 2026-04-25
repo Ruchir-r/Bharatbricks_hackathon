@@ -1,0 +1,651 @@
+section,drug_name,level_p,level_s,level_t,dosage_forms,raw_level_label,page
+,1.1- General Anaesthetics and Oxygen,False,False,False,,,4
+1.1.1,Halothane,False,True,True,Liquid for inhalation,"S,T",4
+1.1.2,Isoflurane,False,True,True,Liquid for inhalation,"S,T",4
+1.1.3,Ketamine,True,True,True,Injection 10 mg/mL Injection 50 mg/mL,"P,S,T",4
+1.1.4,Nitrous oxide,True,True,True,As licensed for medical purpose,"P,S,T",4
+1.1.5,Oxygen*,True,True,True,As licensed for medical purpose,"P,S,T",4
+1.1.6,Propofol,True,True,True,Injection 10 mg/mL,"P,S,T",4
+1.1.7,Sevoflurane,False,True,True,Liquid for inhalation,"S,T",4
+1.1.8,Thiopentone,True,True,True,Powder for injection 0.5 g Powder for injection 1 g,"P,S,T",4
+1.1.8,1.2-Local Anaesthetics,False,False,False,,,5
+1.2.1,Bupivacaine,False,True,True,Injection 0.25 % Injection 0.5 % Injection 0.5 % with 7.5 % glucose,"S,T",5
+1.2.2,Lignocaine*,True,True,True,Topical forms 2-5 % Injection 1 % Injection 2 % Injection 5 % with 7.5 % glucose,"P,S,T",5
+1.2.3,Lignocaine (A) + Adrenaline (B),True,True,True,Injection 1% (A) + 1:200000 (5 mcg/mL) (B) Injection 2% (A) + 1:200000 (5 mcg/mL) (B),"P,S,T",5
+1.2.3,1.3- Preoperative Medication and Sedation for Short Term Procedures,False,False,False,,,5
+1.3.1,Atropine**,True,True,True,Injection 0.6 mg/mL,"P,S,T",5
+1.3.2,Glycopyrrolate,False,True,True,Injection 0.2 mg/mL,"S,T",6
+1.3.3,Midazolam*,True,True,True,Tablet 7.5 mg Nasal Spray 0.5mg Nasal Spray 1.25 mg Injection 1 mg/mL Injection 5 mg/mL,"P,S,T",6
+1.3.4,Morphine**,True,True,True,Injection 10 mg/mL Injection 15 mg/mL,"P,S,T",6
+1.3.4,Section 1.4 -Muscle Relaxants and Cholinesterase Inhibitors,False,False,False,,,6
+1.4.1,Atracurium,False,True,True,Injection 10 mg/mL,"S,T",6
+1.4.2,Baclofen,False,True,True,Tablet 5 mg Tablet 10 mg Tablet 20 mg,"S,T",6
+1.4.3,Neostigmine*,False,True,True,Tablet 15 mg Injection 0.5 mg/mL,"S,T",7
+1.4.4,Succinylcholine,False,True,True,Injection 50 mg/mL,"S,T",7
+1.4.5,Vecuronium,False,True,True,Powder for injection 4 mg Powder for injection 10 mg,"S,T",7
+1.4.5,"2.1 - Non-opioid Analgesics, Antipyretics and Non-steroidal Anti- inflammatory Drugs",False,True,False,,,7
+2.1.1,Acetylsalicylic acid**,True,True,True,Tablet 300 mg to 500 mg Effervescent/ Dispersible/ Enteric coated Tablet 300 mg to 500 mg,"P,S,T",7
+2.1.2,Diclofenac,True,True,True,Tablet 50 mg Injection 25 mg/mL,"P,S,T",8
+2.1.3,Ibuprofen*,True,True,True,Tablet 200 mg Tablet 400 mg Oral liquid 100 mg/5 mL (p),"P,S,T",8
+2.1.4,Mefenamic acid,True,True,True,Tablet 250 mg Oral liquid 100 mg/5 mL (p),"P,S,T",8
+2.1.5,Paracetamol**,True,True,True,Tablet 500 mg Tablet 650 mg Oral liquid 120 mg/5 mL (p) Oral Liquid 125 mg/5 mL (p) Oral Liquid 250 mg/5 mL (p) Injection 150 mg/ mL Suppository 80 mg Suppository 170 mg,"P,S,T",8
+2.1.5,2.2-Opioid Analgesics,False,False,False,,,8
+2.2.1,Fentanyl,False,True,True,Injection 50 mcg/mL,"S,T",8
+2.2.1,Tablet 500 mg,False,False,False,,,8
+2.2.1,Tablet 650 mg,False,False,False,,,8
+2.2.1,Oral liquid 120 mg/5 mL (p),True,False,False,,,8
+2.2.1,Oral Liquid 125 mg/5 mL (p),True,False,False,,,8
+2.2.1,Oral Liquid 250 mg/5 mL (p),True,False,False,,,8
+2.2.1,Injection 150 mg/ mL,False,False,False,,,8
+2.2.1,Suppository 80 mg,False,False,False,,,8
+2.2.1,Suppository 170 mg,False,False,False,,,8
+2.2.2,Morphine*,True,True,True,Tablet 10 mg Injection 10 mg/mL Injection 15 mg/mL,"P,S,T",9
+2.2.3,Tramadol**,False,True,True,Capsule 50 mg Capsule 100 mg Injection 50 mg/mL,"S,T",9
+2.3.1,Allopurinol***,True,True,True,Tablet 100 mg Tablet 300 mg,"P,S,T",9
+2.3.2,Colchicine,True,True,True,Tablet 0.5 mg,"P,S,T",9
+2.3.2,2.4-Disease Modifying Agents used in Rheumatoid Disorders,False,False,False,,,10
+2.4.1,Azathioprine*,False,True,True,Tablet 25 mg (p) Tablet 50 mg,"S,T",10
+2.4.2,Hydroxychloroquine,True,True,True,Tablet 200 mg Tablet 400 mg,"P,S,T",10
+2.4.3,Methotrexate**,True,True,True,Tablet 2.5 mg Tablet 5 mg Tablet 10 mg,"P,S,T",10
+2.4.4,Sulfasalazine,False,True,True,Tablet 500 mg,"S,T",10
+3.1,Adrenaline,True,True,True,Injection 1 mg/mL,"P,S,T",10
+3.2,Cetirizine,True,True,True,Tablet 10 mg Oral liquid 5 mg/5 mL (p),"P,S,T",10
+3.3,Dexamethasone*,True,True,True,Tablet 0.5 mg Tablet 2 mg Tablet 4 mg Oral liquid 0.5 mg/5 mL (p) Injection 4 mg/mL,"P,S,T",11
+3.4,Hydrocortisone**,True,True,True,Tablet 5 mg Tablet 10 mg Powder for Injection 100 mg Powder for Injection 200 mg,"P,S,T",11
+3.5,Pheniramine,True,True,True,Injection 22.75 mg/mL,"P,S,T",11
+3.6,Prednisolone***,True,True,True,Tablet 5 mg Tablet 10 mg Tablet 20 mg Oral liquid 5 mg/5 mL (p) Oral liquid 15 mg/5 mL (p),"P,S,T",11
+3.6,Section 4 Antidotes and Other Substances used in Management of Poisonings/Envenomation,False,True,False,,,12
+3.6,4.1-Nonspecific,False,False,False,,,12
+4.1.1,Activated Charcoal,True,True,True,Powder (as licensed),"P,S,T",12
+4.1.1,4.2 Specific,False,False,False,,,12
+4.2.1,Atropine*,True,True,True,Injection 0.6 mg/mL,"P,S,T",12
+4.2.2,Calcium gluconate**,True,True,True,Injection 100 mg/mL,"P,S,T",12
+4.2.3,D- Penicillamine,True,True,True,Capsule 150 mg (p) Capsule 250 mg,"P,S,T",12
+4.2.4,Desferrioxamine,False,True,True,Powder for injection 500 mg,"S,T",12
+4.2.5,Methylthioninium chloride (Methylene blue),False,True,True,Injection 10 mg/mL,"S,T",12
+4.2.6,N-acetylcysteine,True,True,True,Sachet 200 mg Injection 200 mg/mL,"P,S,T",13
+4.2.7,Naloxone,True,True,True,Injection 0.4 mg/mL,"P,S,T",13
+4.2.8,Neostigmine*,True,True,True,Injection 0.5 mg/mL,"P,S,T",13
+4.2.9,Pralidoxime chloride (2-PAM),True,True,True,Injection 25 mg/mL,"P,S,T",13
+4.2.10,Snake venom antiserum**,True,True,True,Soluble/ liquid polyvalent - As licensed Lyophilized polyvalent - As licensed,"P,S,T",13
+4.2.11,Sodium nitrite,False,True,True,Injection 30 mg/mL,"S,T",13
+4.2.12,Sodium thiosulphate,False,True,True,Injection 250 mg/mL,"S,T",13
+4.2.12,Section 5.1-Anticonvulsants/ Antiepileptics,False,True,False,,,14
+5.1.1,Carbamazepine*,True,True,True,Tablet 100 mg Tablet 200 mg Tablet 400 mg Modified Release - Tablet 200 mg Tablet 400 mg Oral liquid 100 mg/5 mL (p),"P,S,T",14
+5.1.2,Clobazam,False,True,True,Tablet 5 mg Tablet 10 mg,"S,T",14
+5.1.3,Diazepam**,True,True,True,Oral liquid 2 mg/5 mL (p) Injection 5 mg/mL Suppository 5 mg,"P,S,T",14
+5.1.4,Levetiracetam,False,True,True,Tablet 250 mg Tablet 500 mg Tablet 750 mg Modified Release Tablet 750 mg Oral liquid 100 mg/mL (p) Injection 100 mg/mL,"S,T",14
+5.1.5,Lorazepam,True,True,True,Tablet 1 mg Tablet 2 mg Injection 2 mg/mL Injection 4 mg/mL,"P,S,T",14
+5.1.6,Magnesium sulphate,False,True,True,Injection 500 mg/mL,"S,T",15
+5.1.7,Midazolam*,True,True,True,Tablet 7.5 mg Tablet 15 mg Nasal Spray 0.5 mg/actuation Nasal Spray 1.25 mg/actuation Injection 1 mg/mL Injection 5 mg/mL,"P,S,T",15
+5.1.8,Phenobarbitone,True,True,True,Tablet 30 mg Tablet 60 mg Oral liquid 20 mg/5 mL (p),"P,S,T",15
+5.1.8,Injection 200 mg/mL,False,True,True,,"S,T",15
+5.1.9,Phenytoin,True,True,True,Tablet 50 mg Tablet 100 mg Tablet 300 mg Modified Release Tablet 300 mg Oral liquid 30 mg/5 mL (p) Oral liquid 125 mg/5 mL (p) Injection 25 mg/mL Injection 50 mg/mL,"P,S,T",15
+5.1.10,Sodium Valproate*,True,True,True,Tablet 200 mg Tablet 300 mg Tablet 500 mg Modified Release - Tablet 300 mg Tablet 500 mg Oral liquid 200 mg/5 mL (p),"P,S,T",16
+5.1.10,Injection 100 mg/mL,False,True,True,,"S,T",16
+5.2.1,Acetylsalicylic acid**,True,True,True,Tablet 300 mg to 500 mg Effervescent/ Dispersible/ Enteric coated Tablet 300 mg to 500 mg,"P,S,T",16
+5.2.2,Ibuprofen*,True,True,True,Tablet 200 mg Tablet 400 mg Oral liquid 100 mg/5 mL (p),"P,S,T",17
+5.2.3,Paracetamol**,True,True,True,Tablet 500 mg Tablet 650 mg Oral liquid 120 mg/5mL (p) Oral Liquid 125 mg/5mL (p) Oral Liquid 250 mg/5mL (p),"P,S,T",17
+5.2.4,Sumatriptan,True,True,True,Tablet 25 mg Tablet 50 mg,"P,S,T",17
+5.2.4,Section 5.2.1 - For Prophylaxis,False,False,False,,,17
+5.2.1.1,Amitriptyline***,True,True,True,Tablet 10 mg Tablet 25 mg Tablet 75 mg,"P,S,T",17
+5.2.1.1,Tablet 500 mg,False,False,False,,,17
+5.2.1.1,Tablet 650 mg,False,False,False,,,17
+5.2.1.1,Oral liquid 120 mg/5mL (p),True,False,False,,,17
+5.2.1.1,Oral Liquid 125 mg/5mL (p),True,False,False,,,17
+5.2.1.1,Oral Liquid 250 mg/5mL (p),True,False,False,,,17
+5.2.1.2,Flunarizine,True,True,True,Tablet 5 mg Tablet 10 mg,"P,S,T",18
+5.2.1.3,Propranolol,True,True,True,Tablet 10 mg Tablet 20 mg Tablet 40 mg,"P,S,T",18
+5.3.1,Levodopa (A) + Carbidopa (B),True,True,True,Tablet 100 mg (A) + 10 mg (B) Tablet 100 mg (A) + 25 mg (B) Tablet 250 mg (A) + 25 mg (B) Modified Release - Tablet 100 mg (A) + 25 mg (B) Tablet 200 mg (A) + 50 mg (B),"P,S,T",18
+5.3.2,Trihexyphenidyl,True,True,True,Tablet 2 mg,"P,S,T",18
+5.4.1,Donepezil,False,True,True,Tablet 5 mg Tablet 10 mg,"S,T",18
+5.4.1,6.1-Anthelminthics,False,False,False,,,19
+5.4.1,6.1.1- Intestinal Anthelminthics,False,False,False,,,19
+6.1.1.1,Albendazole*,True,True,True,Tablet 400 mg Chewable Tablet 400 mg Oral liquid 200 mg/5 mL (p),"P,S,T",19
+6.1.1.2,Mebendazole,True,True,True,Tablet 100 mg Oral liquid 100 mg/5 mL (p),"P,S,T",19
+6.1.1.2,6.1.2 Antifilarial,False,False,False,,,19
+6.1.2.1,Albendazole*,True,True,True,Tablet 400 mg Chewable Tablet 400 mg Oral liquid 200 mg/5 mL (p),"P,S,T",19
+6.1.2.2,Diethylcarbamazine (DEC),True,True,True,Tablet 50 mg Tablet 100 mg Oral liquid 120 mg/5 mL (p),"P,S,T",19
+6.1.2.3,Ivermectin,True,True,True,Tablet 6 mg Tablet 12 mg,"P,S,T",20
+6.1.3.1,Praziquantel,False,True,True,Tablet 600 mg,"S,T",20
+6.1.3.1,6.2-Antibacterials,False,False,False,,,20
+6.2.1.1,Amoxicillin,True,True,True,Capsule 250 mg Capsule 500 mg Oral liquid 125 mg/5 mL (p) Oral liquid 250 mg/5 mL (p) Powder for Injection 250 mg Powder for Injection 500 mg Powder for injection 1000 mg,"P,S,T",20
+6.2.1.2,Amoxicillin (A) + Clavulanic acid (B),True,True,True,Tablet 500 mg (A) + 125 mg (B) Oral liquid 200 mg (A) + 28.5 mg (B)/5 mL (p) Dry Syrup 125 mg (A) + 31.25 (B)/ 5 mL (p),"P,S,T",20
+6.2.1.2,Powder for Injection 500 mg (A) + 100 mg (B) Powder for Injection 1 g (A) + 200 mg (B),False,True,True,,"S,T",20
+6.2.1.3,Ampicillin,True,True,True,Powder for Injection 500 mg Powder for Injection 1000 mg,"P,S,T",21
+6.2.1.4,Benzathine benzylpenicillin,True,True,True,Powder for Injection 6 lac units Powder for Injection 12 lac units Powder for injection 24 lac units,"P,S,T",21
+6.2.1.5,Benzylpenicillin,True,True,True,Powder for injection 5 lac units Powder for injection 10 lac units,"P,S,T",21
+6.2.1.6,Cefadroxil,True,True,True,Tablet 500 mg Tablet 100 mg Oral liquid 125 mg/5 mL (p),"P,S,T",21
+6.2.1.7,Cefazolin,True,True,True,Powder for Injection 500 mg Powder for Injection 1000 mg,"P,S,T",21
+6.2.1.8,Cefixime,False,True,True,Tablet 200 mg Tablet 400 mg Oral liquid 50 mg/5 mL (p) Oral liquid 100 mg/5 mL (p),"S,T",21
+6.2.1.9,Cefotaxime*,False,True,True,Powder for Injection 250 mg Powder for Injection 500 mg Powder for Injection 1000 mg,"S,T",21
+6.2.1.10,Ceftazidime,False,True,True,Powder for Injection 250 mg Powder for Injection 1000 mg,"S,T",22
+6.2.1.11,Ceftriaxone,False,True,True,Powder for Injection 250 mg Powder for Injection 500 mg Powder for Injection 1000 mg Powder for Injection 2000 mg,"S,T",22
+6.2.1.12,Cloxacillin,True,True,True,Capsule 250 mg Capsule 500 mg Oral Liquid 125 mg/5 mL (p) Powder for Injection 250 mg,"P,S,T",22
+6.2.1.13,Piperacillin (A) + Tazobactam (B),False,False,True,Powder for Injection 1000 mg (A) + 125 mg (B) Powder for Injection 2000 mg (A) + 250 mg (B) Powder for Injection 4000 mg (A) + 500 mg (B),T,22
+6.2.1.14,Meropenem,False,False,True,Powder for Injection 500 mg (as trihydrate) Powder for Injection 1000 mg (as trihydrate),T,22
+6.2.1.14,6.2.2 - Other Antibacterials,False,False,False,,,22
+6.2.2.1,Azithromycin*,True,True,True,Tablet 250 mg Tablet 500 mg Oral liquid 200 mg/5 mL (p) Powder for Injection 500 mg,"P,S,T",22
+6.2.2.2,Cefuroxime,True,True,True,Tablet 500 mg Oral liquid 125 mg/ 5 mL (p) Injection 1500 mg,"P,S,T",22
+6.2.2.3,Ciprofloxacin*,True,True,True,Tablet 250 mg Tablet 500 mg Oral liquid 250 mg/ 5 mL (p) Injection 200 mg/ 100 mL,"P,S,T",23
+6.2.2.4,Clarithromycin**,False,True,True,Tablet 250 mg Tablet 500 mg Oral liquid 125 mg/5 mL (p),"S,T",23
+6.2.2.5,Clindamycin***,True,True,True,Capsule 150 mg Capsule 300 mg Injection 150 mg /mL,"P,S,T",23
+6.2.2.6,Co-trimoxazole [Sulphamethoxazole (A) + Trimethoprim (B)]****,True,True,True,Tablet 400 mg (A) + 80 mg (B) Tablet 800 mg (A) + 160 mg (B) Oral liquid 200 mg (A) + 40 mg (B)/5 mL (p),"P,S,T",23
+6.2.2.7,Doxycycline*,True,True,True,Capsule 100 mg Dry Syrup 50 mg/5 mL (p) Power for Injection 100 mg,"P,S,T",24
+6.2.2.8,Gentamicin,True,True,True,Injection 10 mg/mL Injection 40 mg/mL,"P,S,T",24
+6.2.2.9,Metronidazole**,True,True,True,Tablet 200 mg Tablet 400 mg Oral liquid 200 mg/5 mL (p) Injection 500 mg/100 mL,"P,S,T",24
+6.2.2.10,Nitrofurantoin,True,True,True,Tablet 100 mg Oral liquid 25 mg/5 mL (p),"P,S,T",24
+6.2.2.11,Phenoxymethyl penicillin,True,True,True,Tablet 250 mg,"P,S,T",24
+6.2.2.12,Procaine Benzylpenicillin,True,True,True,Powder for injection 1000 mg (=1 million IU),"P,S,T",24
+6.2.2.13,Vancomycin,False,True,True,Capsule 125 mg Capsule 250 mg Powder for Injection 250 mg Powder for Injection 500 mg Powder for Injection 1000 mg,"S,T",24
+6.3.1,Clofazimine*,True,True,True,Capsule 50 mg Capsule 100 mg,"P,S,T",25
+6.3.2,Dapsone,True,True,True,Tablet 50 mg Tablet 100 mg,"P,S,T",25
+6.3.3,Rifampicin**,True,True,True,Capsule 150 mg Capsule 300 mg,"P,S,T",25
+6.4.1,Amikacin,False,True,True,Injection 100 mg/mL Injection 250 mg/mL Injection 500 mg/mL,"S,T",25
+6.4.2,Bedaquiline,False,False,True,Tablet 100 mg,T,25
+6.4.3,Clarithromycin***,False,True,True,Tablet 250 mg Tablet 500 mg Tablet 750 mg,"S,T",25
+6.4.4,Clofazimine*,False,True,True,Capsule 50 mg Capsule 100 mg,"S,T",26
+6.4.5,Cycloserine,False,True,True,Capsule 125 mg Capsule 250 mg,"S,T",26
+6.4.6,Delamanid,False,False,True,Tablet 50 mg,T,26
+6.4.7,Ethambutol,True,True,True,Tablet 200 mg Tablet 400 mg Tablet 600 mg Tablet 800 mg,"P,S,T",26
+6.4.8,Ethionamide,False,True,True,Tablet 125 mg Tablet 250 mg,"S,T",26
+6.4.9,Isoniazid,True,True,True,Tablet 100 mg Tablet 300 mg Oral Liquid 50 mg/5 mL (p),"P,S,T",26
+6.4.10,Levofloxacin,True,True,True,Tablet 250 mg Tablet 500 mg Tablet 750 mg,"P,S,T",26
+6.4.11,Linezolid,True,True,True,Tablet 300 mg Tablet 600 mg,"P,S,T",26
+6.4.12,Moxifloxacin,True,True,True,Tablet 400 mg,"P,S,T",26
+6.4.13,Para- aminosalicylic acid,False,True,True,Granules (As licensed),"S,T",27
+6.4.14,Pyrazinamide,True,True,True,Tablet 500 mg Tablet 750 mg Tablet 1000 mg Tablet 1500 mg Oral liquid 250 mg/5 mL (p),"P,S,T",27
+6.4.15,Rifampicin*,True,True,True,Capsule 150 mg Capsule 300 mg Capsule 450 mg Capsule 600 mg Oral liquid 100 mg/ 5 mL (p),"P,S,T",27
+6.4.16,Streptomycin,True,True,True,Powder for Injection 750 mg Powder for Injection 1000 mg,"P,S,T",27
+6.5.1,Amphotericin B**,False,True,True,a) Amphotericin B (conventional) - Injection 50 mg/vial b) Lipid Amphotericin B - Injection 50 mg/vial c) Liposomal Amphotericin B - Injection 50 mg/vial,"S,T",27
+6.5.2,Clotrimazole*,True,True,True,Pessary 100 mg,"P,S,T",28
+6.5.3,Fluconazole,True,True,True,Tablet 50 mg Tablet 100 mg Tablet 150 mg Tablet 200 mg Tablet 400 mg Oral liquid 50 mg/ 5 mL (p),"P,S,T",28
+6.5.3,Injection 200 mg / 100 mL,False,True,True,,"S,T",28
+6.5.4,Griseofulvin,True,True,True,Tablet 125 mg Tablet 250 mg Tablet 375 mg,"P,S,T",28
+6.5.5,Itraconazole,False,True,True,Capsule 100 mg Capsule 200 mg Oral liquid 10 mg/mL,"S,T",28
+6.5.6,Mupirocin,True,True,True,Ointment 2%,"P,S,T",28
+6.5.7,Nystatin,False,True,True,Pessary 1 Lac IU Oral Liquid 1 Lac IU/mL (p),"S,T",28
+6.5.8,Terbinafine,True,True,True,Cream 1%,"P,S,T",28
+6.6.1.1,Acyclovir*,True,True,True,Tablet 200 mg Tablet 400 mg Tablet 800 mg Powder for Injection 250 mg Powder for Injection 500 mg Oral liquid 400 mg/5 mL (p),"P,S,T",29
+6.6.2.1,Valganciclovir**,False,True,True,Tablet 450 mg Powder for oral solution 50 mg/mL,"S, T",29
+6.6.2.1,6.7.1 Nucleoside Reverse Transcriptase Inhibitors,False,False,False,,,29
+6.7.1.1,Abacavir,False,True,True,Tablet 60 mg (p) Tablet 300 mg,"S,T",29
+6.7.1.2,Abacavir (A) + Lamivudine (B),False,True,True,Tablet 60 mg (A) + 30 mg (B) (p) Tablet 600 mg (A) + 300 mg (B),"S,T",30
+6.7.1.3,Lamivudine,False,True,True,Tablet 100 mg Tablet 150 mg,"S,T",30
+6.7.1.4,Tenofovir Disproxil Fumarate (TDF)*,False,True,True,Tablet 300 mg,"S,T",30
+6.7.1.5,Tenofovir Disproxil Fumarate (A) + Lamivudine (B),False,True,True,Tablet 300 mg (A) + 300 mg (B),"S,T",30
+6.7.1.6,Tenofovir Disproxil Fumarate (A) + Lamivudine (B) + Dolutegravir (C),True,True,True,Tablet 300 mg (A) + 300 mg (B) + 50 mg (C),"P,S,T",30
+6.7.1.7,Tenofovir Disproxil Fumarate (A) + Lamivudine (B) + Efavirenz (C),False,True,True,Tablet 300 mg (A) + 300 mg (B) + 600 mg (C),"S,T",30
+6.7.1.8,Zidovudine,False,True,True,Tablet 300 mg Oral liquid 50 mg/5 mL (p),"S,T",30
+6.7.1.9,Zidovudine (A) + Lamivudine (B),False,True,True,Tablet 60 mg (A) + 30 mg (B) (p) Tablet 300 mg (A) + 150 mg (B),"S,T",30
+6.7.1.10,Zidovudine (A) + Lamivudine (B) + Nevirapine (C),False,True,True,Tablet 60 mg (A) + 30 mg (B) + 50 mg (C) (p) Tablet 300 mg (A) + 150 mg (B) + 200 mg (C),"S,T",31
+6.7.1.10,6.7.2Non-nucleoside Reverse Transcriptase Inhibitors,False,False,False,,,31
+6.7.2.1,Efavirenz,False,True,True,Tablet 200 mg (p) Tablet 600 mg,"S,T",31
+6.7.2.2,Nevirapine,True,True,True,Tablet 200 mg Dispersible Tablet 50 mg (p) Oral liquid 50 mg/ 5 mL (p),"P,S,T",31
+6.7.2.2,6.7.3 Integrase Inhibitors,False,False,False,,,31
+6.7.3.1,Dolutegravir,False,True,True,Tablet 50 mg,"S,T",31
+6.7.3.2,Raltegravir,False,True,True,Tablet 400 mg,"S,T",31
+6.7.3.2,6.7.4 Protease Inhibitors,False,False,False,,,31
+6.7.4.1,Atazanavir (A) + Ritonavir (B),False,True,True,Tablet 300 mg (A) + Tablet 100 mg (B),"S,T",31
+6.7.4.2,Darunavir,False,True,True,Tablet 600 mg,"S,T",32
+6.7.4.3,Darunavir (A) + Ritonavir (B),False,True,True,Tablet 600 mg (A) + Tablet 100 mg (B),"S,T",32
+6.7.4.4,Lopinavir (A) + Ritonavir (B),False,True,True,Tablet 100 mg (A) + 25 mg (B) Tablet 200 mg (A) + 50 mg (B) Oral Liquid 80 mg (A) + 20 mg (B) /mL (p) Capsule/ Sachet (containing pellets/granules) 40 mg (A) + 10 mg (B) (p),"S,T",32
+6.7.4.5,Ritonavir,False,True,True,Tablet 100 mg,"S,T",32
+6.7.5.1,Acyclovir*,True,True,True,Injection 250 mg,"P,S,T",32
+6.7.5.2,Cefotaxime**,True,True,True,Injection 1000 mg,"P,S,T",32
+6.7.5.3,Clindamycin***,True,True,True,Tablet 300 mg,"P,S,T",32
+6.7.5.4,Clotrimazole*,True,True,True,Ointment 1 %,"P,S,T",33
+6.7.5.5,Valganciclovir**,False,True,True,Tablet/Capsule 450 mg,"S,T",33
+6.7.6.1,Azithromycin***,True,True,True,Tablet 1000 mg,"P,S,T",33
+6.8.1,Daclatasvir,False,True,True,Tablet 30 mg Tablet 60 mg,"S,T",33
+6.8.2,Entecavir,False,True,True,Tablet 0.5 mg Tablet 1 mg Oral liquid 0.05 mg/mL (p),"S,T",33
+6.8.3,Ribavirin,False,True,True,Capsule 200 mg,"S,T",34
+6.8.4,Sofosbuvir,False,True,True,Tablet 400 mg,"S,T",34
+6.8.5,Tenofovir Alafenamide Fumarate (TAF),False,True,True,Tablet 25 mg,"S,T",34
+6.8.6,Tenofovir Disproxil Fumarate (TDF)*,False,True,True,Tablet 300 mg,"S,T",34
+6.9.1.1,Metronidazole**,True,True,True,Tablet 200 mg Tablet 400 mg Injection 500 mg/100 mL Oral liquid 200 mg/5 mL (p),"P,S,T",34
+6.9.2.1,Amphotericin B*,False,True,True,a) Amphotericin B (conventional)- Injection 50 mg b) Lipid Amphotericin B- Injection 50 mg c) Liposomal Amphotericin B- Injection 50 mg,"S,T",35
+6.9.2.2,Miltefosine,True,True,True,Capsule 50 mg,"P,S,T",35
+6.9.2.3,Paromomycin,True,True,True,Injection 375 mg/mL,"P,S,T",35
+6.9.3.1,Clindamycin**,True,True,True,Capsule 150 mg Capsule 300 mg,"P,S,T",35
+6.9.3.2,Co-trimoxazole* [Sulphamethoxazole (A) + Trimethoprim (B)],True,True,True,Tablet 400 mg (A) + 80 mg (B) Tablet 800 mg (A) + 160 mg (B) Oral liquid 200 mg (A) + 40 mg (B)/5 mL (p),"P,S,T",36
+6.9.3.2,6.10.1 - For curative treatment,False,False,False,,,36
+6.10.1.1,Artemether (A) + Lumefantrine (B),True,True,True,Tablet 20 mg (A) + 120 mg (B) Tablet 40 mg (A) + 240 mg (B) Tablet 80 mg (A) + 480 mg (B),"P,S,T",36
+6.10.1.2,Artesunate,True,True,True,Powder for Injection 60 mg Powder for Injection 120 mg,"P,S,T",36
+6.10.1.3,Artesunate (A) + Sulphadoxine - Pyrimethamine (B),True,True,True,Combi pack (A+B) 1 Tablet 25 mg (A) + 1 Tablet (250 mg + 12.5 mg) (B) 1 Tablet 50 mg (A) + 1 Tablet (500 mg + 25 mg) (B) 1 Tablet 100 mg (A) + 1 Tablet (750 mg + 37.5 mg) (B) 1 Tablet 150 mg (A) + 2 Tablet (500 mg + 25 mg) (B) 1 Tablet 200 mg (A) + 2 Tablet (750 mg + 37.5 mg) (B),"P,S,T",36
+6.10.1.4,Chloroquine,True,True,True,Tablet 150 mg Oral liquid 50 mg/5 mL,"P,S,T",37
+6.10.1.5,Clindamycin*,True,True,True,Capsule 150 mg Capsule 300 mg,"P,S,T",37
+6.10.1.6,Primaquine,True,True,True,Tablet 2.5 mg Tablet 7.5 mg Tablet 15 mg,"P,S,T",37
+6.10.1.7,Quinine,True,True,True,Tablet 300 mg Injection 300 mg/mL,"P,S,T",37
+6.10.1.7,6.10.2 - For prophylaxis,False,False,False,,,37
+6.10.2.1,Doxycycline**#,True,True,True,Capsule 100 mg Oral liquid 50 mg/ 5mL #for prophylaxis of P. vivax,"P,S,T",37
+6.10.2.2,Mefloquine#,False,False,True,"Tablet 250 mg #Only for use as chemoprophylaxis for long term travellers like military and travel troops, travelling from low endemic to high endemic area.",T,37
+7.1.1,5-Fluorouracil,False,False,True,Injection 250 mg/ 5 mL,T,38
+7.1.2,6-Mercaptopurine,False,False,True,Tablet 50 mg,T,38
+7.1.3,Actinomycin D,False,False,True,Powder for Injection 0.5 mg,T,38
+7.1.4,All-trans retinoic acid,False,False,True,Capsule 10 mg,T,38
+7.1.5,Arsenic trioxide,False,False,True,Injection 1mg/ mL,T,38
+7.1.6,Bendamustine hydrochloride,False,False,True,Injection 25 mg/ vial Injection 100 mg/vial,T,38
+7.1.7,Bleomycin,False,False,True,Powder for Injection 15 units,T,38
+7.1.8,Bortezomib,False,False,True,Powder for Injection 2 mg,T,38
+7.1.9,Calcium folinate,False,False,True,Tablet 15 mg Injection 3 mg/mL,T,38
+7.1.10,Capecitabine,False,False,True,Tablet 500 mg,T,38
+7.1.11,Carboplatin,False,False,True,Injection 10 mg/mL,T,39
+7.1.12,Chlorambucil,False,False,True,Tablet 2 mg Tablet 5 mg,T,39
+7.1.13,Cisplatin,False,False,True,Injection 1mg/mL,T,39
+7.1.14,Cyclophosphamide,False,False,True,Tablet 50 mg Powder for Injection 500 mg,T,39
+7.1.15,Cytosine arabinoside,False,False,True,Injection 100 mg/vial Injection 500 mg/vial Injection 1000 mg/vial,T,39
+7.1.16,Dacarbazine,False,False,True,Powder for Injection 200 mg Powder for Injection 500 mg,T,39
+7.1.17,Daunorubicin,False,False,True,Injection 5 mg/mL,T,39
+7.1.18,Docetaxel,False,False,True,Powder for Injection 20 mg Powder for Injection 80 mg,T,39
+7.1.19,Doxorubicin,False,False,True,Injection 2 mg/mL,T,39
+7.1.20,Etoposide,False,False,True,Capsule 50 mg Injection 20 mg/mL,T,39
+7.1.21,Gefitinib,False,False,True,Tablet 250 mg,T,39
+7.1.22,Gemcitabine,False,False,True,Powder for Injection 200 mg Powder for Injection 1000 mg,T,40
+7.1.23,Hydroxyurea*,False,False,True,Capsule 500 mg,T,40
+7.1.24,Ifosfamide,False,False,True,Powder for Injection 1000 mg Powder for Injection 2000 mg,T,40
+7.1.25,Imatinib,False,False,True,Tablet 100 mg Tablet 400 mg,T,40
+7.1.26,Irinotecan HCl trihydrate,False,False,True,Solution for injection 20 mg/ mL,T,40
+7.1.27,L-Asparaginase,False,False,True,Powder for Injection 5000 KU Powder for Injection 10000 KU,T,40
+7.1.28,Lenalidomide,False,False,True,Capsule 5 mg Capsule 25 mg,T,40
+7.1.29,Melphalan,False,False,True,Tablet 2 mg Tablet 5 mg,T,40
+7.1.30,Methotrexate**,False,True,True,Tablet 2.5 mg Tablet 5 mg Tablet 10 mg Injection 50 mg/mL,"S,T",40
+7.1.31,Oxaliplatin,False,False,True,I I | njection 5 mg/mL in 10 mL vial,T,41
+7.1.31,njection 5 mg/mL in 20 mL vial,False,False,False,,,41
+7.1.32,Paclitaxel,False,False,True,Injection 30 mg/5 mL Injection 100 mg/16.7 mL,T,41
+7.1.33,Rituximab,False,False,True,Injection 10 mg/mL,T,41
+7.1.34,Temozolomide,False,False,True,Capsule 20 mg Capsule 100 mg Capsule 250 mg,T,41
+7.1.35,Thalidomide,False,False,True,Capsule 50 mg Capsule 100 mg,T,41
+7.1.36,Trastuzumab,False,False,True,Injection 440 mg/50 mL,T,41
+7.1.37,Vinblastine,False,False,True,Injection 1 mg/mL,T,41
+7.1.38,Vincristine,False,False,True,Injection 1 mg/mL,T,41
+7.1.38,7.2-Hormones and Anti-hormones used in Cancer Therapy,False,False,False,,,41
+7.2.1,Bicalutamide,False,False,True,Tablet 50 mg,T,41
+7.2.2,Letrozole,False,False,True,Tablet 2.5 mg,T,41
+7.2.3,Leuprolide acetate,False,False,True,Powder for injection 3.75 mg Powder for injection 11.25 mg Powder for injection 22.5 mg,T,42
+7.2.4,Prednisolone*,False,True,True,Tablet 10 mg Tablet 20 mg Tablet 40 mg Oral liquid 5 mg/5 mL (p) Oral liquid 15 mg/5 mL (p) Injection 20 mg/2 mL,"S,T",42
+7.2.5,Tamoxifen,False,False,True,Tablet 10 mg Tablet 20 mg,T,42
+7.3.1,Azathioprine**,False,False,True,Tablet 50 mg,T,42
+7.3.2,Cyclosporine,False,False,True,Capsule 25 mg Capsule 50 mg Capsule 100 mg Oral liquid 100 mg/mL (p) Injection 50 mg/mL,T,42
+7.3.3,Mycophenolate mofetil,False,False,True,Tablet 250 mg Tablet 500 mg,T,43
+7.3.4,Tacrolimus,False,False,True,Capsule 0.5 mg Capsule 1 mg Capsule 2 mg,T,43
+7.4.1,Allopurinol*,False,True,True,Tablet 100 mg,"S,T",43
+7.4.2,Amitriptyline**,False,True,True,Tablet 10 mg Tablet 25 mg,"S,T",43
+7.4.3,Dexamethasone***,False,True,True,Tablet 0.5 mg Tablet 4 mg Injection 4 mg/mL,"S,T",43
+7.4.4,Diazepam*,False,True,True,Tablet 2 mg Tablet 5 mg Injection 5 mg/mL,"S,T",44
+7.4.5,Filgrastim,False,False,True,Injection 300 mcg,T,44
+7.4.6,Fluoxetine**,False,True,True,Capsule 20 mg,"S,T",44
+7.4.7,Haloperidol***,False,True,True,Tablet 1.5 mg Tablet 5 mg Injection 5 mg/mL,"S,T",44
+7.4.8,Lactulose****,False,True,True,Oral liquid 10 g/15 mL,"S,T",44
+7.4.9,Loperamide,False,True,True,Tablet 2 mg,"S,T",44
+7.4.10,Metoclopramide*,False,True,True,Tablet 10 mg Oral liquid 5 mg/5 mL (p) Injection 5 mg/mL,"S,T",45
+7.4.11,Mesna,False,False,True,Injection 100 mg/mL,T,45
+7.4.12,Midazolam**,False,True,True,Injection 1 mg/mL,"S,T",45
+7.4.13,Morphine***,False,True,True,Tablet 10 mg Modified Release Tablet 30 mg,"S,T",45
+7.4.14,Ondansetron****,False,True,True,Tablet 4 mg Tablet 8 mg Oral liquid 2 mg/5 mL (p) Injection 2 mg/mL,"S,T",45
+7.4.15,Tramadol*,False,True,True,Capsule 50 mg Capsule 100 mg Injection 50 mg/mL,"S,T",46
+7.4.16,Zoledronic acid,False,False,True,Powder for Injection 4 mg,T,46
+8.1.1,Erythropoietin,False,True,True,Injection 2000 IU/mL Injection 10000 IU/mL,"S,T",46
+8.1.2,F errous salts (a) Iron Dextran (b) Iron sorbitol citrate complex,True,True,True,Tablet equivalent to 60 mg of elemental iron Injection 50 mg/mL Injection 50 mg/mL,"P,S,T",46
+8.1.3,Ferrous Salt (A)+ Folic acid (B),True,True,True,Tablet 45 mg elemental iron (A) + 400 mcg (B) Tablet 100 mg elemental iron (A) + 500 mcg (B) Oral liquid 20 mg elemental iron (A) + 100 mcg/mL (B) (p),"P,S,T",46
+8.1.4,Folic Acid,True,True,True,Tablet 1 mg Tablet 5 mg,"P,S,T",47
+8.1.5,Hydroxocobalamin,True,True,True,Injection 1 mg/mL,"P,S,T",47
+8.1.6,Hydroxyurea*,False,True,True,Capsule 500 mg,"S,T",47
+8.1.7,Iron sucrose,False,True,True,Injection 20 mg/mL,"S,T",47
+8.2.1,Enoxaparin**,False,True,True,Injection 40 mg/ 0.4 mL Injection 60 mg/ 0.6 mL,"S,T",47
+8.2.2,Heparin***,False,True,True,Injection 1000 IU/mL Injection 5000 IU/mL,"S,T",47
+8.2.3,Phytomenadione (Vitamin K ) 1,True,True,True,Tablet 10 mg Injection 10 mg/mL,"P,S,T",47
+8.2.4,Protamine Sulphate,False,True,True,Injection 10 mg/mL,"S,T",47
+8.2.5,Tranexamic acid,True,True,True,Tablet 500 mg Injection 100 mg/mL,"P,S,T",47
+8.2.6,Warfarin,False,True,True,Tablet 1 mg Tablet 2 mg Tablet 3 mg Tablet 5 mg,"S,T",48
+8.2.6,Section 9 Blood products and Plasma substitutes,False,False,False,,,48
+8.2.6,9.1 - Blood and Blood components,False,False,False,,,48
+8.2.6,"All forms of the following as approved by licensing authority are considered as included in NLEM. However, considering the process, technology and other relevant aspects, they should be considered differently for purposes such as procurement policy, pricing etc.",False,True,False,,,48
+9.1.1,Fresh frozen plasma,False,True,True,As licensed,"S,T",48
+9.1.2,Platelet rich plasma/ Platelet concentrates,False,True,True,As licensed,"S,T",48
+9.1.3,Red blood cells/ Packed RBCs,False,True,True,As licensed,"S,T",48
+9.1.4,Whole blood,False,True,True,As licensed,"S,T",48
+9.1.4,9.2 - Plasma substitutes,False,False,False,,,49
+9.2.1,Dextran-40,False,True,True,Injection 10 %,"S,T",49
+9.2.1,9.3 - Plasma fractions for specific use,False,False,False,,,49
+9.2.1,"In case of coagulation factors and other blood products, irrespective of variation in source, all forms of these products as approved by licensing authority are considered as included in NLEM. However, considering the source, process, technology and other relevant aspects, they should be considered differently for purposes such as procurement policy, pricing etc.",False,True,False,,,49
+9.3.1,Coagulation factor IX,False,True,True,Powder for Injection 600 IU,"S,T",49
+9.3.2,Coagulation factor VIII,False,True,True,Powder for Injection 250 IU Powder for Injection 500 IU,"S,T",49
+9.3.3,Cryoprecipitate,False,True,True,As licensed,"S,T",49
+10.1.1,Diltiazem,True,True,True,Tablet 30 mg Tablet 60 mg Modified Release Tablet 180 mg,"P,S,T",50
+10.1.1,Injection 5 mg/mL,False,True,True,,"S, T",50
+10.1.2,Glyceryl trinitrate,True,True,True,Sublingual Tablet 0.5 mg,"P,S,T",50
+10.1.2,Injection 5 mg/mL,False,True,True,,"S,T",50
+10.1.3,Isosorbide dinitrate,True,True,True,Tablet 5 mg Tablet 10 mg,"P,S,T",50
+10.1.4,Metoprolol,True,True,True,Tablet 25 mg Tablet 50 mg Tablet 100 mg Modified Release Tablet 100 mg,"P,S,T",50
+10.1.4,Injection 1 mg/mL,False,True,True,,"S,T",50
+10.2.1,Adenosine,False,True,True,Injection 3 mg/mL,"S,T",51
+10.2.2,Amiodarone,False,True,True,Tablet 100 mg Tablet 200 mg Injection 50 mg/mL,"S,T",51
+10.2.3,Digoxin*,False,True,True,Tablet 0.25 mg Oral liquid 0.05 mg/mL Injection 0.25 mg/mL,"S,T",51
+10.2.4,Esmolol,False,True,True,Injection 10 mg/mL,"S,T",51
+10.2.5,Lignocaine**,False,True,True,Injection 2%,"S,T",51
+10.2.6,Verapamil,False,True,True,Tablet 40 mg Tablet 80 mg Injection 2.5 mg/ mL,"S,T",51
+10.3.1,Amlodipine,True,True,True,Tablet 2.5 mg Tablet 5 mg Tablet 10 mg,"P,S,T",51
+10.3.2,Enalapril,True,True,True,Tablet 2.5 mg Tablet 5 mg,"P,S,T",52
+10.3.3,Hydrochlorothiazide *,True,True,True,Tablet 12.5 mg Tablet 25 mg,"P,S,T",52
+10.3.4,Labetalol,True,True,True,Tablet 50 mg Tablet 100 mg,"P,S,T",52
+10.3.4,Injection 5 mg/mL,True,True,True,,"P,S,T",52
+10.3.5,Ramipril,True,True,True,Tablet 2.5 mg Tablet 5 mg,"P,S,T",52
+10.3.6,Sodium nitroprusside,False,True,True,Injection 10 mg/mL,"S, T",52
+10.3.7,Telmisartan,True,True,True,Tablet 20 mg Tablet 40 mg Tablet 80 mg,"P,S,T",52
+10.4.1,Digoxin**,False,True,True,Tablet 0.25 mg Oral liquid 0.05 mg/mL Injection 0.25 mg/mL,"S,T",52
+10.4.2,Dobutamine,False,True,True,Injection 50 mg/mL,"S,T",53
+10.4.3,Dopamine,False,True,True,Injection 40 mg/mL,"S,T",53
+10.4.4,Noradrenaline,False,True,True,Injection 2 mg/mL,"S,T",53
+10.4.5,Spironolactone*,True,True,True,Tablet 25 mg Tablet 50 mg,"P,S,T",53
+10.5.1,Acetylsalicylic acid**,True,True,True,Conventional/Effervescent/ Dispersible/ Enteric coated Tablets 150 mg Conventional/Effervescent/ Dispersible/ Enteric coated Tablets 325 mg Enteric coated Tablet 75 mg Enteric coated Tablet 100 mg,"P,S,T",53
+10.5.2,Clopidogrel,True,True,True,Tablet 75 mg Tablet 150 mg,"P,S,T",54
+10.5.3,Dabigatran,False,True,True,Tablet 110 mg Tablet 150 mg,"S, T",54
+10.5.4,Enoxaparin*,False,True,True,Injection 40 mg/ 0.4 mL Injection 60 mg/ 0.6 mL,"S,T",54
+10.5.5,Heparin**,False,True,True,Injection 1000 IU/mL Injection 5000 IU/mL,"S,T",54
+10.5.6,Streptokinase,False,True,True,"Injection 750,000 IU Injection 15,00,000 IU","S,T",54
+10.5.7,Tenecteplase,False,True,True,Injection 30 mg/vial Injection 40 mg/vial,"S,T",54
+10.6.1,Atorvastatin,True,True,True,Tablet 10 mg Tablet 20 mg Tablet 40 mg Tablet 80 mg,"P,S,T",54
+11.1.1,Clotrimazole*,True,True,True,Cream 1 % Lotion 1 %,"P,S,T",55
+11.2.1,Framycetin,True,True,True,Cream 1 %,"P,S,T",55
+11.2.2,Fusidic acid,True,True,True,Cream 2 %,"P,S,T",55
+11.2.3,Silver sulphadiazine,True,True,True,Cream 1 %,"P,S,T",55
+11.3.1,Betamethasone valerate,True,True,True,Cream 0.05 % Cream 0.1 %,"P,S,T",55
+11.3.2,Calamine,True,True,True,Lotion (As per IP),"P,S,T",56
+11.3.2,11.4 - Keratolytic agents,False,False,False,,,56
+11.4.1,Benzoyl peroxide,True,True,True,Gel 2.5 % - 5 %,"P,S,T",56
+11.4.2,Coal tar (A) + Salicylic Acid (B),True,True,True,Solution 1 % (A) + 3 % (B),"P,S,T",56
+11.4.3,Podophyllin resin,False,True,True,Solution 20 %,"S,T",56
+11.4.4,Salicylic acid,True,True,True,Ointment 3-6 %,"P,S,T",56
+11.4.4,11.5 - Scabicides and Pediculicides,False,False,False,,,56
+11.5.1,Permethrin,True,True,True,Lotion 1 % Cream 5 %,"P,S,T",56
+11.5.1,11.6 Miscellaneous,False,False,False,,,56
+11.6.1,Glycerin/glycerol (as mentioned in IP),True,True,True,Topical,"P,S,T",56
+11.6.1,Section 12 Diagnostic agents,False,False,False,,,57
+12.1.1,Fluorescein,False,True,True,Ophthalmic Strips,"S,T",57
+12.1.2,Proparacaine*,False,True,True,Eye Drops 0.5%,"S,T",57
+12.1.3,Tropicamide**,False,True,True,Eye drop 1 %,"S,T",57
+12.1.3,12.2 - Radiocontrast Media,False,False,False,,,57
+12.2.1,Barium sulphate,False,True,True,Oral Liquid 95% w/v,"S,T",57
+12.2.2,Gadobenate dimeglumine,False,False,True,Injection 529 mg/mL,T,57
+12.2.3,Iohexol,False,True,True,Injection 140 to 350 mg iodine/mL,"S,T",57
+12.2.4,Meglumine diatrizoate,False,True,True,Injection 60 % w/v Injection 76 % w/v,"S,T",57
+12.2.4,Section 13 Dialysis components (Haemodialysis and Peritoneal Dialysis),False,True,False,,,58
+13.1,Haemodialysis fluid,False,True,True,As licensed,"S,T",58
+13.2,Peritoneal dialysis solution,False,True,True,As licensed,"S,T",58
+13.2,Section 14 Antiseptics and Disinfectants,False,False,False,,,58
+13.2,14.1 Antiseptics,False,False,False,,,58
+14.1.1,Chlorhexidine,True,True,True,Solution 5% (Concentrate),"P,S,T",58
+14.1.2,Ethyl alcohol (Denatured),True,True,True,Solution 70%,"P,S,T",58
+14.1.3,Hydrogen peroxide,True,True,True,Solution 6 %,"P,S,T",58
+14.1.4,Methylrosanilinium chloride (Gentian Violet),True,True,True,Topical preparation 0.25% to 2%,"P,S,T",58
+14.1.5,Povidone iodine*,True,True,True,Solution 4 % to 10 %,"P,S,T",58
+14.1.5,14.2 Disinfectants,False,False,False,,,59
+14.2.1,Glutaraldehyde,False,True,True,As Licensed,"S,T",59
+14.2.2,Potassium permanganate,True,True,True,Crystals for topical solution,"P,S,T",59
+14.2.2,Section 15 Diuretics,False,False,False,,,59
+15.1,Furosemide,True,True,True,Tablet 40 mg Oral liquid 10 mg/mL Injection 10 mg/ mL,"P,S,T",59
+15.2,Hydrochlorothiazide *,True,True,True,Tablet 25 mg Tablet 50 mg,"P,S,T",59
+15.3,Mannitol,True,True,True,Injection 10 % Injection 20 %,"P,S,T",59
+15.4,Spironolactone**,True,True,True,Tablet 25 mg Tablet 50 mg,"P,S,T",59
+16.1,Budesonide*,True,True,True,Nasal Spray 50 mcg/dose Nasal Spray 100 mcg/dose,"P,S,T",60
+16.2,Ciprofloxacin**,True,True,True,Drops 0.3 %,"P,S,T",60
+16.3,Clotrimazole***,True,True,True,Drops 1 %,"P,S,T",60
+16.4,Xylometazoline,True,True,True,Nasal drops 0.05 % Nasal drops 0.1 %,"P,S,T",60
+17.1.1,Omeprazole,True,True,True,Capsule 10 mg Capsule 20 mg Capsule 40 mg Powder for oral liquid 20 mg,"P,S,T",61
+17.1.2,Pantoprazole,False,True,True,Injection 40 mg,"S,T",61
+17.1.2,17.2 Antiemetics,False,False,False,,,61
+17.2.1,Domperidone,True,True,True,Tablet 10 mg Oral Liquid 1 mg/mL,"P,S,T",61
+17.2.2,Metoclopramide*,True,True,True,Tablet 10 mg Injection 5 mg/mL,"P,S,T",61
+17.2.3,Ondansetron*,False,True,True,Tablet 4 mg Oral Liquid 2 mg/5 mL (p) Injection 2 mg/ mL,"S,T",61
+17.3.1,5-aminosalicylic acid (Mesalazine/ Mesalaine),False,True,True,Tablet 400 mg Suppository 500 mg Retention Enema,"S, T",62
+17.4.1,Dicyclomine,True,True,True,Tablet 10 mg Oral Solution 10 mg/5mL Injection 10 mg/ mL,"P,S,T",62
+17.4.2,Hyoscine butyl bromide,True,True,True,Tablet 100 mg Injection 20 mg/ mL,"P,S,T",62
+17.4.2,17.5 Laxatives,False,False,False,,,62
+17.5.1,Bisacodyl,True,True,True,Tablet 5 mg Suppository 5 mg,"P,S,T",62
+17.5.2,Ispaghula,True,True,True,Granules/ Husk/ Powder,"P,S,T",62
+17.5.3,Lactulose*,False,True,True,Oral Liquid 10 g/15 mL,"S,T",63
+17.6.1,Oral rehydration salts**,True,True,True,As licensed,"P,S,T",63
+17.6.2,Zinc Sulphate,True,True,True,Dispersible Tablet 20 mg,"P,S,T",63
+17.7.1,Somatostatin,False,False,True,Powder for Injection 3 mg,T,63
+17.7.1,18.1-Adrenal Hormones and Synthetic substitutes,False,False,False,,,64
+18.1.1,Dexamethasone*,False,True,True,Tablet 0.5 mg Injection 4 mg/mL,"S,T",64
+18.1.2,Fludrocortisone,False,True,True,Tablet 0.1 mg,"S,T",64
+18.1.3,Hydrocortisone**,True,True,True,Tablet 5 mg Tablet 10 mg Tablet 20 mg Powder for Injection 100 mg,"P,S,T",64
+18.1.4,Methylprednisolone ***,False,True,True,Injection 40mg/mL,"S,T",64
+18.1.5,Prednisolone*,True,True,True,Tablet 5 mg Tablet 10 mg Tablet 20 mg Oral liquid 5 mg/5 mL (p) Oral liquid 15 mg/5 mL (p),"P,S,T",65
+18.1.5,18.2 Contraceptives,False,False,False,,,65
+18.1.5,18.2.1 - Hormonal Contraceptives,False,False,False,,,65
+18.2.1.1,Ethinylestradiol (A)+ Levonorgestrel (B),True,True,True,Tablet 0.03 mg (A) + Tablet 0.15 mg (B),"P,S,T",65
+18.2.1.2,Levonorgestrel,True,True,True,Tablet 0.75 mg Tablet 1.5 mg,"P,S,T",65
+18.2.1.3,Ormeloxifene (Centchroman),True,True,True,Tablet 30 mg,"P,S,T",65
+18.2.1.3,18.2.2 - Intrauterine Devices,False,False,False,,,66
+18.2.2.1,Hormone releasing IUD,False,False,True,Contains 52 mg of Levonorgestrel,T,66
+18.2.2.2,IUD containing Copper,True,True,True,As licensed,"P,S,T",66
+18.2.2.2,18.2.3 - Barrier methods,False,False,False,,,66
+18.2.3.1,Condom,True,True,True,"As Licensed as per the standards of Drugs Rules, 1945","P,S,T",66
+18.2.3.1,18.3.1 - Insulins and other Antidiabetic agents,False,False,False,,,66
+18.3.1.1,Glimepiride,True,True,True,Tablet 1 mg Tablet 2 mg,"P,S,T",66
+18.3.1.2,Insulin (Soluble),True,True,True,Injection 40 IU/mL,"P,S,T",66
+18.3.1.3,Insulin Intermediate Acting (NPH),True,True,True,Injection 40 IU/mL,"P,S,T",66
+18.3.1.4,Insulin Glargine,True,True,True,Injection 100 IU/mL,"P,S,T",67
+18.3.1.5,Insulin Premix Injection 30:70 (Regular : NPH),True,True,True,Injection 40 IU/mL,"P,S,T",67
+18.3.1.6,Metformin,True,True,True,Tablet 500 mg Tablet 1000 mg Modified release Tablet 1000 mg,"P,S,T",67
+18.3.1.7,Teneligliptin,True,True,True,Tablet 20 mg,"P,S,T",67
+18.3.2.1,Glucose*,True,True,True,Injection 25 %,"P,S,T",67
+18.3.2.1,18.4-Ovulation Inducers,False,False,False,,,67
+18.4.1,Clomiphene citrate,False,False,True,Tablet 50 mg Tablet 100 mg,T,67
+18.4.2,Human chorionic gonadotropin,False,True,True,Injection 2000 IU Injection 5000 IU Injection 10000 IU,"S,T",67
+18.4.2,"*Glucose formulations are also listed in Section 25.1 - Solutions correcting water, electrolyte disturbances and acid-base disturbances",False,False,False,,,67
+18.4.2,18.5-Progestogens,False,False,False,,,68
+18.5.1,Medroxyprogesterone acetate,True,True,True,Tablet 5 mg Tablet 10 mg Injection 150 mg/ mL,"P,S,T",68
+18.5.2,Norethisterone,True,True,True,Tablet 5 mg,"P,S,T",68
+18.6.1,Carbimazole,True,True,True,Tablet 5 mg Tablet 10 mg Tablet 20 mg,"P,S,T",68
+18.6.2,Levothyroxine,True,True,True,"Tablet 12.5 mcg to 150 mcg* (*Several strengths are available in market such as 12.5,25,50,62.5, 75, 88,100, 112mcg. Therefore, it was considered to give a range of available strengths)","P,S,T",68
+18.6.2,Section 19 Immunologicals,False,False,False,,,68
+18.6.2,"In case of these biologicals, irrespective of variation in source, composition and strengths, all the products of the same vaccine/ sera/ immunoglobulin, as approved by licensing authority are considered as included in NLEM. However, considering the source, process, technology and other relevant aspects, different products of the same biological should be considered differently for purposes such as procurement policy, pricing etc.",False,True,False,,,68
+18.6.2,19.1-Diagnostic agents,False,False,False,,,69
+19.1.1,"Tuberculin, Purified Protein derivative",True,True,True,As Licensed,"P,S,T",69
+19.1.1,19.2-Sera and Immunoglobulins (Liquid/ Lyophilized),False,False,False,,,69
+19.2.1,Anti-rabies immunoglobulin,True,True,True,As Licensed,"P,S,T",69
+19.2.2,Anti-tetanus immunoglobulin,True,True,True,As Licensed,"P,S,T",69
+19.2.3,Anti-D immunoglobulin,False,True,True,As Licensed,"S,T",69
+19.2.4,Diphtheria antitoxin,True,True,True,As Licensed,"P,S,T",69
+19.2.5,Hepatitis B immunoglobulin,False,True,True,As Licensed,"S,T",69
+19.2.6,Human normal immunoglobulin,False,False,True,As Licensed,T,69
+19.2.7,Snake Venom Antiserum*,True,True,True,a) Soluble/ liquid polyvalent - As Licensed b) Lyophilized polyvalent - As Licensed,"P,S,T",69
+19.2.7,*Snake Venom antiserum also listed in Section 4.2.12 - Antidotes and Other Substances used in Management of Poisonings/Envenomation Specific,False,True,False,,,69
+19.2.7,19.3-Vaccines,False,False,False,,,70
+19.2.7,"a) All the vaccines which are under Universal Immunization Program of India (UIP) will be deemed included in NLEM. Presently, the UIP has BCG, DPT, OPV, measles, Hepatitis B, Japanese encephalitis, Pentavalent Vaccines and Rota virus vaccine.",True,True,True,,,70
+19.2.7,"b) The vaccines, which have been approved by National Technical Advisory Group on Immunization (NTAGI) and planned to be given under UIP, will be deemed to be included as and when listed in UIP. These vaccines are inactivated polio vaccine (IPV) and Measles Rubella (MR).",True,True,False,,,70
+19.2.7,"c) In future, the vaccines which are under consideration, if and when included in UIP, will also be deemed included from the date of inclusion in UIP. These are pneumococcal and HPV vaccines.",True,False,False,,,70
+19.2.7,For Universal Immunization,False,False,False,,,70
+19.3.1,BCG vaccine,True,True,True,As licensed,"P,S,T",70
+19.3.2,DPT+ Hib+ Hep B vaccine,True,True,True,As licensed,"P,S,T",70
+19.3.3,DPT vaccine,True,True,True,As licensed,"P,S,T",70
+19.3.4,Hepatitis B vaccine,True,True,True,As licensed,"P,S,T",70
+19.3.5,Japanese encephalitis vaccine,True,True,True,As licensed,"P,S,T",70
+19.3.6,Measles vaccine,True,True,True,As licensed,"P,S,T",71
+19.3.7,Oral poliomyelitis vaccine,True,True,True,As licensed,"P,S,T",71
+19.3.8,Rotavirus vaccine,True,True,True,As licensed,"P,S,T",71
+19.3.9,Tetanus toxoid,True,True,True,As licensed,"P,S,T",71
+19.3.9,19.4 - For Specific Group of Individuals,False,False,False,,,71
+19.4.1,Rabies vaccine,True,True,True,As licensed,"P,S,T",71
+20.1,Alprostadil,False,True,True,Injection 0.5 mg/mL,"S,T",71
+20.2,Caffeine,False,True,True,Oral liquid 20 mg/mL Injection 20 mg/mL,"S,T",71
+20.3,Surfactant,False,True,True,Suspension for intratracheal instillation (As licensed),"S,T",71
+21.1.1,Acyclovir*,True,True,True,Ointment 3%,"P,S,T",72
+21.1.2,Ciprofloxacin**,True,True,True,Drops 0.3% Ointment 0.3%,"P,S,T",72
+21.1.3,Natamycin,True,True,True,Drops 5 %,"P,S,T",72
+21.1.4,Povidone iodine***,True,True,True,Drops 5 %,"P,S,T",72
+21.2.1,Prednisolone****,True,True,True,Drops 1 %,"P,S,T",72
+21.2.1,21.3- Local Anaesthetic,False,False,False,,,73
+21.3.1,Proparacaine*,True,True,True,Drops 0.5 %,"P,S,T",73
+21.4.1,Acetazolamide,True,True,True,Tablet 250 mg,"P,S,T",73
+21.4.2,Latanoprost,True,True,True,Drops 0.005 %,"P,S,T",73
+21.4.3,Pilocarpine,True,True,True,Drops 2 % Drops 4 %,"P,S,T",73
+21.4.4,Timolol,True,True,True,Drops 0.25 % Drops 0.5 %,"P,S,T",73
+21.4.4,21.5-Mydriatics,False,False,False,,,73
+21.5.1,Atropine**,True,True,True,Drops 1% Ointment 1%,"P,S,T",73
+21.5.2,Homatropine,True,True,True,Drops 2%,"P,S,T",74
+21.5.3,Phenylephrine,True,True,True,Drops 5 % Drops 10 %,"P,S,T",74
+21.5.4,Tropicamide*,True,True,True,Drops 1 %,"P,S,T",74
+21.5.4,21.6-Miscellaneous,False,False,False,,,74
+21.6.1,Carboxymethyl cellulose,True,True,True,Drops 0.5% Drops 1%,"P,S,T",74
+21.6.2,Hydroxypropyl methylcellulose,False,False,True,Injection 2%,T,74
+21.6.2,Section 22 Oxytocics and Antioxytocics,False,False,False,,,74
+21.6.2,22.1 - Oxytocics and Abortifacient,False,False,False,,,74
+22.1.1,Dinoprostone,False,True,True,Tablet 0.5 mg Gel 0.5 mg,"S,T",74
+22.1.2,Methylergometrine,True,True,True,Tablet 0.125 mg Injection 0.2 mg/mL,"P,S,T",74
+22.1.3,Mifepristone,True,True,True,Tablet 200 mg,"P,S,T",75
+22.1.4,Misoprostol,True,True,True,Tablet 100 mcg Tablet 200 mcg,"P,S,T",75
+22.1.5,Oxytocin,True,True,True,Injection 5 IU/mL Injection 10 IU/mL,"P,S,T",75
+22.2.1,Betamethasone,True,True,True,Injection 4 mg/mL,"P,S,T",75
+22.2.2,Nifedipine,False,True,True,Tablet 10 mg,"S,T",75
+23.1.1,Clozapine,False,False,True,Tablet 25 mg Tablet 50 mg Tablet 100 mg,T,75
+23.1.2,Fluphenazine,True,True,True,Injection 25 mg/mL,"P,S,T",75
+23.1.3,Haloperidol*,False,True,True,Tablet 2 mg Tablet 5 mg Tablet 10 mg Tablet 20 mg Oral liquid 2 mg/5 mL Injection 5 mg/mL,"S,T",76
+23.1.4,Risperidone,True,True,True,Tablet 1 mg Tablet 2 mg Tablet 4 mg Oral liquid 1 mg/mL Injection (Long acting) 25 mg Injection (Long acting) 37.5 mg,"P,S,T",76
+23.2.1.1,Amitriptyline**,True,True,True,Tablet 10 mg Tablet 25 mg Tablet 50 mg Tablet 75 mg,"P,S,T",76
+23.2.1.2,Escitalopram,True,True,True,Tablet 5 mg Tablet 10 mg Tablet 20 mg,"P,S,T",77
+23.2.1.3,Fluoxetine*,True,True,True,Capsule 10 mg Capsule 20 mg Capsule 40 mg Capsule 60 mg,"P,S,T",77
+23.2.2.1,Lithium,False,True,True,Tablet 300 mg,"S,T",77
+23.2.2.2,Sodium valproate**,True,True,True,Tablet 200 mg Tablet 300 mg Tablet 500 mg Modified Release - Tablet 300 mg Tablet 500 mg,"P,S,T",77
+23.2.2.3,Carbamazepine***,True,True,True,Tablet 100 mg Tablet 200 mg Tablet 400 mg Modified Release - Tablet 200 mg Tablet 400 mg Oral liquid 100 mg/5 mL (p),"P,S,T",77
+23.3.1,Clonazepam,True,True,True,Tablet 0.25 mg Tablet 0.5 mg Tablet 1 mg,"P,S,T",78
+23.3.2,Zolpidem,True,True,True,Tablet 5 mg Tablet 10 mg,"P,S,T",78
+23.4.1,Clomipramine,True,True,True,Capsule 10 mg Capsule 25 mg Capsule 75 mg,"P,S,T",78
+23.4.2,Fluoxetine*,False,True,True,Capsule 10 mg Capsule 20 mg Capsule 40 mg Capsule 60 mg,"S,T",78
+23.5.1,Buprenorphine,True,True,True,Tablet (Sub-lingual) 0.4 mg,"P,S,T",79
+23.5.2,Buprenorphine (A) + Naloxone (B),True,True,True,Tablet (Sub-lingual) 0.4 mg (A) + 0.1 mg (B) Tablet (Sub-lingual) 2 mg (A) + 0.5 mg (B),"P,S,T",79
+24.1.1,Budesonide*,True,True,True,Inhalation (MDI/DPI) 100 mcg/dose Inhalation (MDI/DPI) 200 mcg/dose Respirator solution for use in nebulizer 0.5 mg/mL Respirator solution for use in nebulizer 1 mg/mL,"P,S,T",79
+24.1.2,Budesonide (A) + Formoterol (B),True,True,True,Inhalation (MDI/DPI) 100 mcg (A) + 6 mcg (B) Inhalation (MDI/DPI) 200 mcg (A) + 6 mcg (B) Inhalation (MDI/DPI) 400 mcg (A) + 6 mcg (B),"P,S,T",80
+24.1.3,Hydrocortisone*,True,True,True,Powder for Injection 100 mg Powder for Injection 200 mg,"P,S,T",80
+24.1.4,Ipratropium,True,True,True,Inhalation (MDI/DPI) 20 mcg/dose Respirator solution for use in nebulizer 250 mcg/mL,"P,S,T",80
+24.1.5,Montelukast,False,True,True,Tablet 4 mg Tablet 5 mg (including chewable tablets) Tablet 10 mg,"S,T",80
+24.1.6,Salbutamol,True,True,True,Tablet 2 mg Tablet 4 mg Oral liquid 2 mg/5 mL Inhalation (MDI/DPI*) 100 mcg/dose Respirator Solution (Solution for Nebulizer 5 mg/mL),"P,S,T",80
+24.1.7,Tiotropium,True,True,True,Inhalation (MDI) 9 mcg/dose Inhalation (DPI) 18 mcg/dose,"P,S,T",81
+24.1.7,MDI- Metered Dose Inhaler DPI- Dry Powder Inhaler,False,False,False,,,81
+24.1.7,"Section 25 Solutions correcting Water, Electrolyte disturbances and Acid-base disturbances",False,False,False,,,81
+25.1.1,Glucose*,True,True,True,Injection 5 % Injection 10 % Injection 25 % Injection 50 %,"P,S,T",81
+25.1.2,Glucose(A) + Sodium chloride (B),True,True,True,Injection 5% (A) + 0.9 % (B),"P,S,T",81
+25.1.3,Oral rehydration salts**,True,True,True,As licensed,"P,S,T",81
+25.1.4,Potassium chloride,True,True,True,Oral liquid 500 mg/5 mL,"P,S,T",81
+25.1.4,Injection 150 mg/mL,False,True,True,,"S,T",81
+25.1.5,Ringer lactate,True,True,True,Injection (as per IP),"P,S,T",82
+25.1.6,Sodium bicarbonate,True,True,True,Injection (as per IP),"P,S,T",82
+25.1.7,Sodium chloride,True,True,True,Injection 0.9%,"P,S,T",82
+25.1.7,Injection 3%,False,True,True,,"S,T",82
+25.1.7,25.2-Miscellaneous,False,False,False,,,82
+25.2.1,Water for Injection,True,True,True,Injection,"P,S,T",82
+25.2.1,Section 26 Vitamins and Minerals,False,False,False,,,82
+26.1,Ascorbic acid (Vitamin C),True,True,True,Tablet 100 mg Tablet 500 mg,"P,S,T",82
+26.2,Calcium carbonate,True,True,True,Tablet 625 mg (equivalent to elemental calcium 250 mg) Tablet 1250 mg (equivalent to elemental calcium 500 mg),"P,S,T",82
+26.3,Calcium gluconate*,True,True,True,Injection 100 mg/mL,"P,S,T",82
+26.3,*Calcium Gluconate formulations are also listed in Section 4.2.2 - Antidotes and Other substances used in poisoning/Envenomation Specific,False,False,False,,,82
+26.5,Pyridoxine,True,True,True,Tablet 10 mg Tablet 50 mg Tablet 100 mg,"P,S,T",83
+26.6,Riboflavin,True,True,True,Tablet 10 mg,"P,S,T",83
+26.7,Thiamine,True,True,True,Tablet 100 mg Injection 100 mg/mL,"P,S,T",83
+26.8,Vitamin A,True,True,True,Capsule/Tablet 50000 IU (including Chewable Tablet) Oral liquid 100000 IU/mL Injection 50000 IU/mL,"P,S,T",83
+27.1,Dexamethasone*,True,True,True,Tablet 0.5 mg Tablet 2 mg Tablet 4 mg Oral liquid 0.5 mg/5 mL (p) Injection 4 mg/mL,"P,S,T",83
+27.2,Enoxaparin**,False,True,True,Injection 40 mg/ 0.4 mL Injection 60 mg/ 0.6 mL,"S,T",83
+27.3,Methylprednisolone *,False,True,True,Injection 40 mg/mL,"S,T",84
+27.4,Paracetamol**,True,True,True,Tablet 500 mg Tablet 650 mg Oral liquid 120 mg/5 mL (p) Oral Liquid 125 mg/5 mL (p) Oral Liquid 250 mg/5 mL (p),"P,S,T",84
+27.5,Oxygen***,True,True,True,As licensed for medical purpose,"P,S,T",84
+27.5,Tablet 500 mg,False,False,False,,,84
+27.5,Tablet 650 mg,False,False,False,,,84
+27.5,Oral liquid 120 mg/5 mL (p),True,False,False,,,84
+27.5,Oral Liquid 125 mg/5 mL (p),True,False,False,,,84
+27.5,Oral Liquid 250 mg/5 mL (p),True,False,False,,,84
+27.5,NIL,False,False,False,,,103
+27.5,Section 4 Antidotes and Other Substances used in Management of Poisonings/Envenomation,False,True,False,,,103
+27.5,6.1.2 -Antifilarial,False,False,False,,,104
+6.1.5,Ivermectin,True,True,True,1 | Tablet 6 mg Tablet 12 mg,"P,S,T",104
+6.1.5,6.2-Antibacterials,False,False,False,,,104
+6.4.7,Delamanid,False,False,True,8 | Tablet 50 mg,T,105
+6.6.2.1,Valganciclovir,False,True,True,12 | Tablet 450 mg Powder for oral solution 50 mg/mL,"S, T",105
+6.7.1.5,Tenofovir (A) + Lamivudine (B) + Dolutegravir (C),True,True,True,14 | Tablet 300 mg (A) + 300 mg (B) + 50 mg (C),"P,S,T",106
+6.7.1.5,6.7.3 - Integrase inhibitors,False,False,False,,,106
+6.7.3.1,6.7.4-Protease inhibitors,False,False,False,,,106
+6.8.5,NIL,False,False,False,,,107
+7.1.26,Irinotecan HCI Trihydrate,False,False,True,20 | Solution for injection 20 mg/ mL,T,107
+7.1.28,7.2-Hormones and anti-hormones used in cancer therapy,False,False,False,,,107
+7.2.3,NIL,False,False,False,,,108
+7.2.3,Section 11 Blood products and Plasma substitutes,False,False,False,,,108
+10.5.7,NIL,False,False,False,,,109
+10.5.7,Section 15 Diagnostic Agents,False,False,False,,,109
+10.5.7,Section 16 Dialysis solutions,False,False,False,,,109
+10.5.7,Section 17 Disinfectants and Antiseptics and,False,False,False,,,110
+10.5.7,Section 18 Diuretics,False,False,False,,,110
+10.5.7,18.1-Adrenal Hormones and Synthetic substitutes,False,False,False,,,110
+18.1.2,18.2 - Contraceptives,False,False,False,,,110
+18.1.2,18.2.1 - Hormonal Contraceptives,False,False,False,,,110
+18.2.3,Ormeloxifene,True,True,True,26 | Tablet 30 mg,"P,S,T",110
+18.2.3,(Centchroman),False,False,False,,,111
+18.2.3,18.3.1 Insulins and other antidiabetic agents,False,False,False,,,111
+18.3.1.7,Section 22 Immunologicals (Now in Section 19),False,False,False,,,111
+18.3.1.7,For universal immunization,False,False,False,,,111
+19.4.8,Rotavirus vaccine,True,True,True,29 | As licensed,"P, S, T",111
+19.4.8,NIL,False,False,False,,,111
+21.4.2,Section 26 Oxytocics and Antioxytocic,False,False,False,,,112
+21.4.2,NIL,False,False,False,,,112
+24.1.8,Montelukast,False,True,True,34 | Tablet 4 mg Tablet 5 mg (including chewable tablets) Tablet 10 mg,"S,T",113
+24.1.8,"Section 29 Solutions correcting Water, Electrolyte disturbances and Acid-base disturbances (Now in Section 25)",False,False,False,,,113
+24.1.8,NIL,False,False,False,,,113
+24.1.8,Section 30 Vitamins and minerals (Now in Section 26),False,False,False,,,113
+24.1.8,Section 1 Anaesthetic Agents,False,False,False,,,118
+1.2.4,Prilocaine (A) + Lignocaine (B),False,False,True,1 | Cream 2.5% (A) + 2.5% (B),T,118
+2.4.3,Leflunomide,False,True,True,2 | Tablet 10 mg Tablet 20 mg,"S,T",118
+3.3,Chlorpheniramine,True,True,True,3 | Tablet 4 mg Oral liquid 2 mg/5 ml,"P,S,T",118
+3.3,Section 4-Antidotes and Other substances used in poisoning treatment,False,False,False,,,118
+3.3,4.2 Specific,False,False,False,,,118
+3.3,Healthcare,False,False,False,,,119
+4.2.4,Dimercaprol,False,True,True,4 | Injection 50 mg/ml,"S,T",119
+4.2.4,NIL,False,False,False,,,119
+6.2.4.1,Capreomycin,True,True,True,5 | Powder for Injection 1 g,"P,S,T",119
+6.2.4.6,Kanamycin,True,True,True,6 | Powder for Injection 500 mg Powder for Injection 750 mg Powder for Injection 1 g,"P,S,T",119
+6.2.4.12,Rifabutin,False,True,True,7 | Capsule 150 mg,"S,T",119
+6.4.2.1,Ganciclovir,False,True,True,8 | Capsule 250 mg Powder for Injection 500 mg,"S,T",119
+6.4.2.1,6.4.3.1 -Nucleoside reverse transcriptase inhibitors,False,False,False,,,120
+6.4.3.1.3,Lamivudine (A) + Nevirapine (B) + Stavudine (B),False,True,True,9 | Dispersible Tablet 30mg (A) + 50mg (B) + 6mg (C) Tablet 150mg (A) + 200mg (B) + 30mg (C),"S,T",120
+6.4.3.1.5,Stavudine (A) + Lamivudine (B),False,True,True,10 | Dispersible Tablet 6 mg (A) + 30 mg (B) (p) Tablet 30 mg (A) + 150 mg (B),"S,T",120
+6.4.4.2,Pegylated interferon alfa 2a,False,True,True,11 | Injection 180 mcg,"S,T",120
+6.4.4.2,Pegylated interferon alfa 2b,False,True,True,Injection 80 mcg Injection 100 mcg Injection 120 mcg,"S,T",120
+6.5.1.1,Diloxanide furoate,True,True,True,12 | Tablet 500 mg,"P,S,T",121
+6.5.4.2,Pentamidine,False,True,True,13 | Powder for Injection 200 mg,"S,T",121
+6.5.4.2,NIL,False,False,False,,,121
+8.1.30,Procarbazine,False,False,True,14 | Capsule 50 mg,T,121
+8.1.30,NIL,False,False,False,,,121
+12.3.6,Methyldopa,True,True,True,15 | Tablet 250 mg Tablet 500 mg,"P,S,T",122
+12.3.6,Section 11 Blood products and Plasma substitutes,False,False,False,,,122
+12.3.6,NIL,False,False,False,,,122
+12.3.2,Atenolol,True,True,True,16 | Tablet 50 mg Tablet 100 mg,"P,S,T",122
+12.5.2,Alteplase,False,False,True,17 | Powder for Injection 20 mg Powder for Injection 50 mg,T,122
+12.5.2,NIL,False,False,False,,,123
+12.5.2,14.6 Miscellaneous,False,False,False,,,123
+14.6.2,White Petrolatum,True,True,True,18 | Jelly 100%,"P,S,T",123
+14.6.2,Section 15 Diagnostic agents,False,False,False,,,123
+14.6.2,NIL,False,False,False,,,123
+14.6.2,Section 16 Dialysis solutions,False,False,False,,,123
+14.6.2,Section 17 Antiseptics and Disinfectants,False,False,False,,,123
+14.6.2,17.1- Antiseptics,False,False,False,,,123
+17.1.1,Cetrimide,True,True,True,19 | Solution 20 % (Concentrate for dilution),"P,S,T",124
+17.1.1,17.2 Disinfectants,False,False,False,,,124
+17.2.1,Bleaching powder,True,True,True,20 | Containing not less than 30%w/w of available chlorine (as per I.P),"P,S,T",124
+17.2.1,Section 18 Diuretics,False,False,False,,,124
+17.2.1,NIL,False,False,False,,,124
+20.1.4,Sucralfate,False,True,True,21 | Oral liquid 1g,"S,T",125
+20.1.3,Ranitidine,True,True,True,22 | Tablet 150 mg Oral liquid 75 mg/5 mL Injection 25 mg/mL,"P,S,T",125
+20.1.3,21.2.1 Hormonal contraceptives,False,False,False,,,125
+21.2.1.2,Ethinylestradiol (A) + Norethisterone (B),True,True,True,23 | Tablet 0.035 mg (A) +1 mg (B),"P,S,T",125
+21.2.1.2,21.3 Estrogens,False,False,False,,,125
+21.3.1,Ethinylestradiol,True,True,True,24 | Tablet 0.01 mg Tablet 0.05 mg,"P,S,T",125
+21.3.1,Section 22 Immunologicals,False,False,False,,,125
+21.3.1,NIL,False,False,False,,,125
+21.3.1,Section 23 Muscle relaxants and cholinesterase inhibitors,False,False,False,,,126
+25.1.3,Erythromycin,True,True,True,25 | Ointment 0.5 %,"P,S,T",126
+25.1.3,Section 26 Oxytocics and Antioxytocics,False,False,False,,,126
+25.1.3,NIL,False,False,False,,,126
+25.1.3,"Section 29 Solutions correcting water, electrolyte disturbances and acid-base disturbances",False,False,False,,,127
+25.1.3,Section 30 Vitamins and minerals,False,False,False,,,127
+30.5,Nicotinamide,True,True,True,26 | Tablet 50 mg,"P,S,T",127

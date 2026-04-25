@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}New prescription · नई पर्ची{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1 class="hero-title">✅ Prescription added</h1>
+  <p class="hero-text" id="visit-summary">From your visit with Dr. Sachin Patil at SAI RAM CLINIC</p>
+  <button class="speak-btn" id="hero-speak">🔊</button>
+</section>
+
+<!-- Timetable now at the TOP — combines existing meds + the 4 just added -->
+<section class="card">
+  <h2 class="card-title">🗓 Updated timetable · पूरी सूची</h2>
+  <p class="muted">Combined with your existing medicines:</p>
+  <div id="timesheet"></div>
+</section>
+
+<section class="card" id="next-dose-banner">
+  <h2 class="card-title">⏰ Next dose · अगली खुराक</h2>
+  <div id="countdown" class="big-text">Loading…</div>
+</section>
+
+<section class="card">
+  <h2 class="card-title">💊 New medicines · नई दवाइयाँ</h2>
+  <div id="new-meds-list" class="muted">Loading…</div>
+</section>
+
+<section class="card">
+  <h2 class="card-title">💰 Cheaper alternatives · सस्ते विकल्प</h2>
+  <p class="muted">Jan Aushadhi (PMBJP) generics that match these molecules:</p>
+  <div id="alternates-list"></div>
+</section>
+
+<!-- Live Bolna call panel — bypasses demo cache so the call ACTUALLY rings -->
+<section class="card" id="bolna-panel" style="border:2px solid #c62828">
+  <h2 class="card-title" style="color:#c62828">📞 Live Bolna voice agent (calls Dr. Saab)</h2>
+  <p class="muted">These buttons fire <strong>real outbound calls</strong> via Bolna's Indian voice-agent stack. Each call costs ~3 Bolna credits.</p>
+  <div style="display:grid; gap:8px">
+    <button class="btn btn-secondary" id="btn-bolna-take">📞 Take-medicine reminder · दवा की याद</button>
+    <button class="btn btn-secondary" id="btn-bolna-checkup">📞 General check-up call · स्वास्थ्य पूछताछ</button>
+  </div>
+  <div id="bolna-status" class="muted" style="margin-top:8px;font-family:ui-monospace,monospace;font-size:0.85em" aria-live="polite"></div>
+</section>
+
+<a href="/?session=demo-patient-001" class="btn btn-primary">
+  <span aria-hidden="true">🏠</span><span>Back to Home · घर वापस</span>
+</a>
+
+<p class="disclaimer">
+  Information only — not a substitute for a doctor.<br>
+  यह जानकारी केवल मदद के लिए है। डॉक्टर की सलाह ज़रूरी है।
+</p>
+{% endblock %}
+{% block scripts %}
+<script src="/static/scan_result.js"></script>
+{% endblock %}

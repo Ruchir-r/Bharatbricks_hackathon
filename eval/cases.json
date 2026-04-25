@@ -1,0 +1,239 @@
+{
+  "version": "1.0",
+  "description": "Eval cases for Rx Helper. Covers /api/scan, /api/trust, /api/explain, /api/interactions. Seed drugs: paracetamol+amoxicillin (safe), cefixime batch CXM2509A (NSQ), paracetamol+flupirtine (banned FDC).",
+  "fixtures_dir": "eval/fixtures",
+  "cases": [
+    {
+      "id": "SCAN-001",
+      "endpoint": "scan",
+      "description": "Real phone-photographed medical certificate, Delhi clinic — note with no medications.",
+      "input": {
+        "mode": "prescription",
+        "file": "eval/fixtures/rx_50.jpg"
+      },
+      "expect": {
+        "drugs_is_empty_or_missing": true,
+        "diagnosis_contains_any": null
+      },
+      "tags": ["ocr", "real", "no-drugs", "hard"]
+    },
+    {
+      "id": "SCAN-002",
+      "endpoint": "scan",
+      "description": "Indian medical note — Dr. Talat Aziz, patient Sheeba Malik, Delhi 110006. Photo. No prescribed drugs visible.",
+      "input": {
+        "mode": "prescription",
+        "file": "eval/fixtures/rx_125.jpg"
+      },
+      "expect": {
+        "drugs_is_empty_or_missing": true
+      },
+      "tags": ["ocr", "real", "indian", "no-drugs"]
+    },
+    {
+      "id": "SCAN-003",
+      "endpoint": "scan",
+      "description": "1994 digoxin prescription — typed clinic header + handwritten drug line 'Digoxin 0.125 mg tablet n.7'.",
+      "input": {
+        "mode": "prescription",
+        "file": "eval/fixtures/rx_1.png"
+      },
+      "expect": {
+        "drugs_must_contain_any_of": ["digoxin"]
+      },
+      "tags": ["ocr", "real", "handwritten", "cardiac"]
+    },
+    {
+      "id": "SCAN-004",
+      "endpoint": "scan",
+      "description": "Synthetic clean prescription — printed, multi-drug. From chinmays18 HF dataset (fallback for clean OCR score).",
+      "input": {
+        "mode": "prescription",
+        "file": "eval/fixtures/synth_multi.png"
+      },
+      "expect": {
+        "drugs_min_count": 2
+      },
+      "tags": ["ocr", "synthetic", "clean", "easy"]
+    },
+    {
+      "id": "SCAN-005",
+      "endpoint": "scan",
+      "description": "Drug-label scan mode — paracetamol 500mg box.",
+      "input": {
+        "mode": "drug_label",
+        "file": "eval/fixtures/label_paracetamol.jpg"
+      },
+      "expect": {
+        "drug_name_contains": "paracetamol"
+      },
+      "tags": ["ocr", "label", "printed"]
+    },
+
+    {
+      "id": "TRUST-001",
+      "endpoint": "trust",
+      "description": "Safe baseline — paracetamol, no batch. Should be approved, not banned, no NSQ.",
+      "input": {
+        "drug_name": "paracetamol",
+        "lang": "en"
+      },
+      "expect": {
+        "safe": true,
+        "approved": true,
+        "banned": false,
+        "nsq_recent": false
+      },
+      "tags": ["trust", "safe"]
+    },
+    {
+      "id": "TRUST-002",
+      "endpoint": "trust",
+      "description": "Safe baseline #2 — amoxicillin.",
+      "input": {
+        "drug_name": "amoxicillin",
+        "lang": "en"
+      },
+      "expect": {
+        "safe": true,
+        "approved": true,
+        "banned": false
+      },
+      "tags": ["trust", "safe"]
+    },
+    {
+      "id": "TRUST-003",
+      "endpoint": "trust",
+      "description": "NSQ-flagged batch — cefixime batch CXM2509A should come back as NSQ-flagged even if the drug itself is approved.",
+      "input": {
+        "drug_name": "cefixime",
+        "batch_no": "CXM2509A",
+        "lang": "en"
+      },
+      "expect": {
+        "safe": false,
+        "approved": true,
+        "nsq_recent": true,
+        "nsq_batches_contains": "CXM2509A"
+      },
+      "tags": ["trust", "nsq", "demo-critical"]
+    },
+    {
+      "id": "TRUST-004",
+      "endpoint": "trust",
+      "description": "Banned FDC component — flupirtine. Part of paracetamol+flupirtine banned combo. Verdict depends on seed CSV; at minimum banned evidence should surface.",
+      "input": {
+        "drug_name": "flupirtine",
+        "lang": "en"
+      },
+      "expect": {
+        "safe": false,
+        "banned": true
+      },
+      "tags": ["trust", "banned", "demo-critical"]
+    },
+    {
+      "id": "TRUST-005",
+      "endpoint": "trust",
+      "description": "Unknown drug — 'zorbidin' shouldn't exist in any seed table. Verdict should be not approved, with a reason.",
+      "input": {
+        "drug_name": "zorbidin",
+        "lang": "en"
+      },
+      "expect": {
+        "approved": false,
+        "reasons_is_nonempty": true
+      },
+      "tags": ["trust", "unknown", "negative"]
+    },
+
+    {
+      "id": "EXPLAIN-001",
+      "endpoint": "explain",
+      "description": "Explain paracetamol 500mg in Hindi — output must mention fever/pain and the drug name; audio_b64 must be non-empty base64.",
+      "input": {
+        "drug": "paracetamol",
+        "dose": "500mg",
+        "lang": "hi"
+      },
+      "expect": {
+        "translated_contains_any": ["बुखार", "दर्द", "पैरासिटामोल", "paracetamol"],
+        "english_contains_any": ["fever", "pain"],
+        "audio_b64_nonempty": true,
+        "language": "hi"
+      },
+      "tags": ["explain", "hindi", "tts"]
+    },
+    {
+      "id": "EXPLAIN-002",
+      "endpoint": "explain",
+      "description": "Explain amoxicillin 250mg in English.",
+      "input": {
+        "drug": "amoxicillin",
+        "dose": "250mg",
+        "lang": "en"
+      },
+      "expect": {
+        "english_contains_any": ["antibiotic", "bacterial", "infection"],
+        "audio_b64_nonempty": true,
+        "language": "en"
+      },
+      "tags": ["explain", "english"]
+    },
+    {
+      "id": "EXPLAIN-003",
+      "endpoint": "explain",
+      "description": "Explain metformin in Hindi — diabetes drug.",
+      "input": {
+        "drug": "metformin",
+        "dose": "500mg",
+        "lang": "hi"
+      },
+      "expect": {
+        "english_contains_any": ["diabetes", "blood sugar", "glucose"],
+        "translated_contains_any": ["मधुमेह", "शुगर", "ग्लूकोज", "metformin"],
+        "audio_b64_nonempty": true
+      },
+      "tags": ["explain", "hindi", "tts"]
+    },
+
+    {
+      "id": "INTERACT-001",
+      "endpoint": "interactions",
+      "description": "Banned FDC pair — paracetamol + flupirtine. Must return hard_blocks containing this pair (demo-critical).",
+      "input": {
+        "drugs": "paracetamol,flupirtine"
+      },
+      "expect": {
+        "hard_blocks_min": 1,
+        "hard_blocks_contain_drugs": ["paracetamol", "flupirtine"]
+      },
+      "tags": ["interactions", "hard-block", "demo-critical"]
+    },
+    {
+      "id": "INTERACT-002",
+      "endpoint": "interactions",
+      "description": "Known clinically risky pair — warfarin + aspirin. Should surface as soft warning (bleeding risk).",
+      "input": {
+        "drugs": "warfarin,aspirin"
+      },
+      "expect": {
+        "soft_is_nonempty": true,
+        "soft_text_contains_any": ["bleeding", "hemorrhage", "anticoagulant"]
+      },
+      "tags": ["interactions", "soft"]
+    },
+    {
+      "id": "INTERACT-003",
+      "endpoint": "interactions",
+      "description": "Safe demo pair — paracetamol + amoxicillin. No hard block; soft may be empty or minor.",
+      "input": {
+        "drugs": "paracetamol,amoxicillin"
+      },
+      "expect": {
+        "hard_blocks_is_empty": true
+      },
+      "tags": ["interactions", "safe"]
+    }
+  ]
+}

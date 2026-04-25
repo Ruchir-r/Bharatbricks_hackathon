@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+
+# Virtualenvs
+.venv/
+.venv-eval/
+node-env/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local secrets / env
+.env
+.env.local
+*.pem
+*.key
+
+# Build artifacts
+build/
+dist/
+*.log
+!DECISIONS.log
+
+# Large generated artifacts (kept locally, not in git)
+SHARE.html
+STRUCTURE_APPENDIX.pdf
+
+# Skills / agent tooling caches (auto-generated)
+.adal/
+.agents/
+.augment/
+.bob/
+.codebuddy/
+.commandcode/
+.continue/
+.cortex/
+.crush/
+.factory/
+.goose/
+.iflow/
+.junie/
+.kilocode/
+.kiro/
+.kode/
+.mcpjam/
+.mux/
+.neovate/
+.openhands/
+.pi/
+.pochi/
+.qoder/
+.qwen/
+.roo/
+.trae/
+.vibe/
+.windsurf/
+.zencoder/
+.claude/
+
+# Eval artifacts (results regenerate)
+eval/results.json
+eval/results_smoke.json
+
+# npm-installed agent skills (symlinks into .agents/)
+skills/
+skills-lock.json
+
+# Databricks
+.databricks/
+.bundle/

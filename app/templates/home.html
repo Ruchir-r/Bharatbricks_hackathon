@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block title %}Home — Rx Helper{% endblock %}
+{% block content %}
+<section class="hero" id="hero">
+  <h1 class="hero-title" id="greet">Namaste / नमस्ते</h1>
+  <p class="hero-text" id="subtitle">Loading your profile…</p>
+  <button class="speak-btn" id="greet-speak">🔊</button>
+</section>
+
+<section class="card" id="next-dose-card" style="display:none">
+  <h2 class="card-title">Next dose · अगली दवा</h2>
+  <div id="next-dose-body" class="big-text"></div>
+</section>
+
+<section class="card" id="meds-card" style="display:none">
+  <h2 class="card-title">My medicines · मेरी दवाइयाँ</h2>
+  <div id="meds-list"></div>
+</section>
+
+<section class="card" id="checkins-card" style="display:none">
+  <h2 class="card-title">Recent check-ins · हाल की जाँच</h2>
+  <div id="checkins-list"></div>
+</section>
+
+<section class="card" id="ask-card">
+  <h2 class="card-title">Ask · पूछिए</h2>
+  <p class="muted" id="ask-sub">Tap a question or type your own.</p>
+  <div id="ask-chips" class="ask-chips">
+    <button class="chip" data-q="Can I take paracetamol with metformin?">💊 Para + Metformin?</button>
+    <button class="chip" data-q="What is amoxicillin for?">💊 What is amoxicillin?</button>
+    <button class="chip" data-q="When should I take cefixime?">⏰ When to take cefixime</button>
+    <button class="chip" data-q="क्या पेरासिटामोल और मेटफॉर्मिन साथ ले सकते हैं?">🇮🇳 पेरा + मेटफॉर्मिन?</button>
+    <button class="chip" data-q="मेटफॉर्मिन से पेट में दर्द हो रहा है, क्या करूँ?">🇮🇳 मेटफॉर्मिन से पेट दर्द</button>
+    <button class="chip" data-q="What should I watch for with amlodipine?">⚠ Amlodipine side effects</button>
+    <button class="chip" data-q="What is amoxicillin for?">💊 Amoxicillin?</button>
+  </div>
+  <textarea id="ask-q" class="text-input" rows="2" placeholder="Type your own question…"></textarea>
+  <button class="btn btn-primary" id="ask-btn">Ask · पूछें</button>
+  <div id="ask-answer" class="result-zone" aria-live="polite"></div>
+</section>
+
+<a href="/scan" class="btn btn-secondary" id="scan-cta">
+  <span aria-hidden="true">📷</span><span>Scan a prescription · पर्ची स्कैन करें</span>
+</a>
+
+<!-- ======= NEW SUPPORT FEATURES — kept simple, all tap-to-show ======= -->
+
+<section class="card" id="refill-card" style="display:none">
+  <h2 class="card-title">Refill alerts · दवाई ख़त्म होने से पहले</h2>
+  <div id="refill-list"></div>
+</section>
+
+<details class="card support-card">
+  <summary class="card-title">💰 Save money · पैसे बचाइए
+    <span class="muted" style="font-weight:normal;font-size:0.85em">— Jan Aushadhi generics</span>
+  </summary>
+  <div id="savings-body" class="muted">tap to load…</div>
+</details>
+
+<details class="card support-card">
+  <summary class="card-title">🏥 Find a Jan Aushadhi pharmacy · नज़दीकी जन औषधि</summary>
+  <div id="pharmacy-body">
+    <button class="btn btn-secondary" id="pharmacy-locate-btn">📍 Use my location</button>
+    <div id="pharmacy-list" class="muted"></div>
+  </div>
+</details>
+
+<details class="card support-card">
+  <summary class="card-title">🛡️ Govt schemes · सरकारी योजना</summary>
+  <div id="scheme-body" class="muted">
+    Loading schemes for your profile…
+  </div>
+</details>
+
+<details class="card support-card">
+  <summary class="card-title">⚠️ Food &amp; drink warnings · खाने-पीने में सावधानी</summary>
+  <div id="food-warn-body" class="muted">tap to load warnings for your medicines</div>
+</details>
+
+<a href="/api/care_card?session_id=demo-patient-001" target="_blank" class="btn btn-secondary">
+  <span aria-hidden="true">🖨️</span><span>Care Card · घरवालों के लिए कार्ड</span>
+</a>
+
+<p class="disclaimer" id="disclaimer">Information only — not a substitute for a doctor. · यह ऐप केवल जानकारी के लिए है।</p>
+{% endblock %}
+{% block scripts %}
+<script src="/static/home.js"></script>
+{% endblock %}

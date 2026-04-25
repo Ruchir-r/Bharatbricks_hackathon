@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}मेरी दवाइयाँ / My Medicines{% endblock %}
+{% block content %}
+<h1 class="page-title">मेरी दवाइयाँ</h1>
+
+<p class="muted">यहाँ आपकी सभी दवाइयाँ और उनका समय देखें।</p>
+
+<div id="timetable-list" aria-live="polite">
+  <div class="empty">
+    <span class="empty-icon">💊</span>
+    <p>अभी कोई दवा नहीं है। पहले पर्ची स्कैन कीजिए।</p>
+    <a href="/scan" class="btn btn-primary">पर्ची स्कैन करें</a>
+  </div>
+</div>
+
+<template id="tt-card-tpl">
+  <article class="card tt-card">
+    <h3 class="tt-drug"></h3>
+    <p class="tt-dose muted"></p>
+    <div class="tt-times"></div>
+    <div class="tt-actions">
+      <button class="btn btn-secondary call-btn">📞 कॉल रिमाइंडर</button>
+      <button class="speak-btn">🔊 सुनें</button>
+    </div>
+  </article>
+</template>
+{% endblock %}
+{% block scripts %}
+<script src="/static/timetable.js"></script>
+{% endblock %}

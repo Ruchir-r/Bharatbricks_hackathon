@@ -1,0 +1,12 @@
+streamlit==1.40.0
+pandas
+pyarrow
+requests
+mlflow
+databricks-sdk
+databricks-vectorsearch
+twilio
+pdfplumber
+rapidfuzz
+Pillow
+python-dateutil

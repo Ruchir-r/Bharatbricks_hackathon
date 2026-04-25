@@ -1,0 +1,21 @@
+combination,components,indication,approval_date,approval_ref
+amoxicillin+clavulanic acid 500+125,amoxicillin;clavulanic acid,"resistant bacterial infections",1984-08-01,CDSCO/FDC/APP/1984
+cotrimoxazole,sulfamethoxazole;trimethoprim,"UTI, pneumonia",1973-04-01,CDSCO/FDC/APP/1973
+artemether+lumefantrine,artemether;lumefantrine,"P. falciparum malaria",2007-05-01,CDSCO/FDC/APP/2007
+sulphadoxine+pyrimethamine,sulphadoxine;pyrimethamine,"malaria second-line",1970-01-01,CDSCO/FDC/APP/1970
+isoniazid+rifampicin 4FDC,isoniazid;rifampicin;pyrazinamide;ethambutol,"tuberculosis intensive phase",1998-01-01,CDSCO/FDC/APP/1998
+amlodipine+atenolol,amlodipine;atenolol,"hypertension combination",1995-05-01,CDSCO/FDC/APP/1995
+telmisartan+hydrochlorothiazide,telmisartan;hydrochlorothiazide,"hypertension combination",2001-03-01,CDSCO/FDC/APP/2001
+glimepiride+metformin,glimepiride;metformin,"type 2 diabetes combination",2000-06-01,CDSCO/FDC/APP/2000
+iron+folic acid,ferrous sulphate;folic acid,"anaemia in pregnancy",1970-01-01,CDSCO/FDC/APP/1970
+paracetamol+ibuprofen,paracetamol;ibuprofen,"pain and fever relief",2010-03-15,CDSCO/FDC/APP/2010
+oral rehydration salts,sodium chloride;potassium chloride;sodium citrate;glucose,"diarrhoea dehydration",1975-01-01,CDSCO/FDC/APP/1975
+dexamethasone+neomycin+polymyxin eye drops,dexamethasone;neomycin;polymyxin B,"ocular infections with inflammation",1985-06-01,CDSCO/FDC/APP/1985
+levocetirizine+montelukast,levocetirizine;montelukast,"allergic rhinitis with asthma",2009-04-10,CDSCO/FDC/APP/2009
+cefixime+ofloxacin,cefixime;ofloxacin,"complicated bacterial infections",2011-05-05,CDSCO/FDC/APP/2011
+piperacillin+tazobactam,piperacillin;tazobactam,"severe nosocomial infections",1994-12-01,CDSCO/FDC/APP/1994
+amoxicillin+dicloxacillin,amoxicillin;dicloxacillin,"mixed bacterial infections",1998-03-01,CDSCO/FDC/APP/1998
+paracetamol+diclofenac,paracetamol;diclofenac,"pain combination",2005-11-01,CDSCO/FDC/APP/2005
+metformin+sitagliptin,metformin;sitagliptin,"type 2 diabetes",2009-08-22,CDSCO/FDC/APP/2009
+clopidogrel+aspirin,clopidogrel;aspirin,"post-stent antiplatelet",2007-12-01,CDSCO/FDC/APP/2007
+atorvastatin+aspirin+clopidogrel,atorvastatin;aspirin;clopidogrel,"secondary prevention CVD",2010-07-20,CDSCO/FDC/APP/2010

@@ -1,0 +1,21 @@
+drug_name,combination,ban_reason,ban_date,notification_ref
+nimesulide+paracetamol,"nimesulide + paracetamol","Irrational FDC, hepatotoxicity risk",2023-06-02,CDSCO/FDC/BAN/2023-14
+chlorpheniramine+codeine+paracetamol,"chlorpheniramine maleate + codeine syrup + paracetamol","Therapeutic justification missing, abuse potential",2023-06-02,CDSCO/FDC/BAN/2023-14
+pholcodine+promethazine,"pholcodine + promethazine","Withdrawal risk, pediatric safety",2023-06-02,CDSCO/FDC/BAN/2023-14
+ammonium chloride+bromhexine+dextromethorphan+menthol,"ammonium chloride + bromhexine + dextromethorphan + menthol","Irrational combination",2023-06-02,CDSCO/FDC/BAN/2023-14
+paracetamol+bromhexine+phenylephrine+chlorpheniramine+guaiphenesin,"paracetamol + bromhexine + phenylephrine + chlorpheniramine + guaiphenesin","Irrational combination",2023-06-02,CDSCO/FDC/BAN/2023-14
+salbutamol+bromhexine+guaiphenesin+menthol,"salbutamol + bromhexine + guaiphenesin + menthol","Irrational combination",2023-06-02,CDSCO/FDC/BAN/2023-14
+paracetamol+phenylephrine+caffeine,"paracetamol + phenylephrine + caffeine","Irrational combination",2023-06-02,CDSCO/FDC/BAN/2023-14
+bromhexine+dextromethorphan+ammonium chloride+menthol,"bromhexine + dextromethorphan + ammonium chloride + menthol","Irrational combination",2023-06-02,CDSCO/FDC/BAN/2023-14
+dextromethorphan+chlorpheniramine+guaiphenesin+ammonium chloride,"dextromethorphan + chlorpheniramine + guaiphenesin + ammonium chloride","Irrational combination",2023-06-02,CDSCO/FDC/BAN/2023-14
+ammonium chloride+sodium citrate+chlorpheniramine maleate+menthol,"ammonium chloride + sodium citrate + chlorpheniramine maleate + menthol","Irrational combination",2023-06-02,CDSCO/FDC/BAN/2023-14
+paracetamol+propyphenazone+caffeine,"paracetamol + propyphenazone + caffeine","Irrational combination with propyphenazone",2023-06-02,CDSCO/FDC/BAN/2023-14
+salbutamol+hydroxyethyl theophylline+guaiphenesin,"salbutamol + hydroxyethyl theophylline + guaiphenesin","Irrational combination",2023-06-02,CDSCO/FDC/BAN/2023-14
+paracetamol+mefenamic acid,"paracetamol + mefenamic acid","Irrational combination, mefenamic safety",2023-06-02,CDSCO/FDC/BAN/2023-14
+paracetamol+flupirtine,"paracetamol + flupirtine","Irrational FDC, flupirtine hepatotoxicity; CDSCO 2023 ban",2023-06-02,CDSCO/FDC/BAN/2023-14
+gatifloxacin,"gatifloxacin","Banned systemic use 2011 — dysglycemia",2011-03-18,CDSCO/BAN/2011-03
+analgin (metamizole),"analgin / metamizole","Banned 2013 — agranulocytosis risk (limited reinstatement)",2013-06-01,CDSCO/BAN/2013-06
+phenylpropanolamine,"phenylpropanolamine (PPA)","Banned 2011 — stroke risk",2011-02-10,CDSCO/BAN/2011-02
+nimesulide pediatric,"nimesulide (for children <12 years)","Banned for pediatric use 2011 — hepatotoxicity",2011-02-10,CDSCO/BAN/2011-02
+rosiglitazone,"rosiglitazone","Suspended 2010 — cardiovascular risk",2010-09-23,CDSCO/SUSP/2010
+cisapride,"cisapride","Banned 2011 — QT prolongation cardiac arrhythmia",2011-02-10,CDSCO/BAN/2011-02

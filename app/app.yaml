@@ -1,0 +1,51 @@
+command:
+  - "uvicorn"
+  - "main:app"
+  - "--host"
+  - "0.0.0.0"
+  - "--port"
+  - "8000"
+
+env:
+  - name: CATALOG
+    value: bricksiitm
+  - name: SCHEMA
+    value: rx_helper
+  - name: DATABRICKS_HTTP_PATH
+    value: /sql/1.0/warehouses/28945e75b0100312
+  - name: REMINDER_LIVE
+    value: "1"
+  - name: SARVAM_API_KEY
+    valueFrom: "sarvam-api-key-resource"
+  - name: BOLNA_API_KEY
+    valueFrom: "bolna-api-key-resource"
+  - name: BOLNA_AGENT_ID
+    valueFrom: "bolna-agent-id-resource"
+  - name: BOLNA_WEBHOOK_TOKEN
+    valueFrom: "bolna-webhook-token-resource"
+
+resources:
+  - name: "sarvam-api-key-resource"
+    description: "Sarvam Translate + TTS + ASR"
+    secret:
+      scope: rx-helper
+      key: sarvam-api-key
+      permission: READ
+  - name: "bolna-api-key-resource"
+    description: "Bolna outbound voice agent"
+    secret:
+      scope: rx-helper
+      key: bolna-api-key
+      permission: READ
+  - name: "bolna-agent-id-resource"
+    description: "Bolna agent UUID"
+    secret:
+      scope: rx-helper
+      key: bolna-agent-id
+      permission: READ
+  - name: "bolna-webhook-token-resource"
+    description: "Token to authenticate Bolna webhook callbacks"
+    secret:
+      scope: rx-helper
+      key: bolna-webhook-token
+      permission: READ

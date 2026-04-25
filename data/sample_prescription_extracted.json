@@ -1,0 +1,36 @@
+{
+  "patient_name": "Mr. Aman",
+  "patient_age": "19",
+  "patient_sex": "M",
+  "diagnosis": "Cold",
+  "doctor": "Dr. Sachin Patil",
+  "clinic": "SAI RAM CLINIC",
+  "date": "2023-10-05",
+  "drugs": [
+    {
+      "brand_or_generic": "Orop-codrug",
+      "dose": null,
+      "frequency": "morning, nop",
+      "duration": "6"
+    },
+    {
+      "brand_or_generic": "Allkose",
+      "dose": null,
+      "frequency": "1+1+1",
+      "duration": "5"
+    },
+    {
+      "brand_or_generic": "BreeseP",
+      "dose": null,
+      "frequency": null,
+      "duration": "5"
+    },
+    {
+      "brand_or_generic": "Sipan-D",
+      "dose": null,
+      "frequency": "young",
+      "duration": null
+    }
+  ],
+  "advice": null
+}

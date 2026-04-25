@@ -1,0 +1,52 @@
+drug_name,category,indication,dosage_guidance,description,approval_date
+paracetamol,analgesic antipyretic,"fever, mild to moderate pain","500mg up to 4 times daily; max 4g/day","Paracetamol is a common over-the-counter pain reliever and fever reducer. Safe when used as directed. Overdose can cause severe liver damage.",1961-01-01
+ibuprofen,NSAID,"pain, inflammation, fever","200-400mg every 6-8 hours; max 1.2g/day OTC","Non-steroidal anti-inflammatory drug. Take with food. Avoid if you have ulcer or kidney problems.",1974-05-01
+diclofenac,NSAID,"pain, inflammation","50mg two or three times daily","Strong NSAID. Not recommended for long-term use due to cardiovascular risks.",1980-04-01
+amoxicillin,antibiotic,"bacterial infections, respiratory tract infections","500mg three times daily for 5-7 days","Penicillin-class antibiotic. Complete the full course even if you feel better. May cause allergic reactions.",1972-06-01
+amoxicillin+clavulanic acid,antibiotic,"resistant bacterial infections","625mg twice daily","Broad-spectrum penicillin combination. For infections resistant to plain amoxicillin.",1984-08-01
+azithromycin,antibiotic,"respiratory and skin infections","500mg once daily for 3 days","Macrolide antibiotic. Short course works well for many infections.",1991-11-01
+cefixime,antibiotic,"typhoid, UTI, respiratory tract","200mg twice daily for 7 days","Third-generation cephalosporin. Take 1 hour before or 2 hours after meals.",1988-03-01
+ceftriaxone,antibiotic,"severe bacterial infections","1-2g once daily IV or IM","Hospital-grade injectable cephalosporin. Used for serious infections.",1982-06-01
+ciprofloxacin,antibiotic,"UTI, diarrhoea, respiratory infections","500mg twice daily","Fluoroquinolone. Avoid sun exposure; take with plenty of water.",1987-10-01
+doxycycline,antibiotic,"acne, atypical pneumonia, malaria prophylaxis","100mg twice daily","Tetracycline. Avoid in children under 8 and pregnancy.",1967-07-01
+metronidazole,antibiotic antiprotozoal,"anaerobic infections, amoebiasis, giardia","400mg three times daily for 5-7 days","Works for anaerobic bacteria and certain parasites. Avoid alcohol.",1963-02-01
+cotrimoxazole,antibiotic,"UTI, pneumonia, prophylaxis","two tablets twice daily","Sulfamethoxazole plus trimethoprim combination.",1973-04-01
+nitrofurantoin,antibiotic,"uncomplicated UTI","100mg four times daily","UTI-specific antibiotic. Take with food.",1953-09-01
+cephalexin,antibiotic,"skin and soft tissue infections, UTI","500mg four times daily","First-generation cephalosporin.",1970-01-01
+fluconazole,antifungal,"candidiasis, ringworm","150mg single dose or 150mg once weekly","Oral antifungal. Single dose commonly used for vaginal candidiasis.",1990-12-01
+acyclovir,antiviral,"herpes simplex, varicella zoster","400mg five times daily for 7 days","Herpes antiviral. Most effective when started early.",1982-10-01
+artemether+lumefantrine,antimalarial,"P. falciparum malaria","four tablets twice daily for 3 days","First-line antimalarial in India.",2007-05-01
+chloroquine,antimalarial,"P. vivax malaria","chloroquine 600mg then 300mg at 6,24,48h","First-line for vivax malaria.",1962-01-01
+chlorpheniramine,antihistamine,"allergic reactions, itching","4mg three or four times daily","First-generation antihistamine. Causes drowsiness.",1962-03-01
+cetirizine,antihistamine,"allergic rhinitis, urticaria","10mg once daily","Second-generation antihistamine. Less sedating.",1989-07-01
+loratadine,antihistamine,"allergic rhinitis, urticaria","10mg once daily","Non-sedating antihistamine.",1993-04-01
+dexamethasone,corticosteroid,"severe inflammation, anaphylaxis","4mg IM/IV then taper","Potent corticosteroid. Use short courses only.",1961-06-01
+prednisolone,corticosteroid,"inflammation, asthma, autoimmune conditions","5-60mg daily as single morning dose","Oral corticosteroid. Do not stop abruptly.",1955-03-01
+phenytoin,anticonvulsant,"epilepsy, seizures","300mg daily in divided doses","Long-term epilepsy medicine. Regular blood levels needed.",1953-01-01
+carbamazepine,anticonvulsant,"epilepsy, trigeminal neuralgia","200mg twice daily, titrate up","Epilepsy and nerve pain medicine.",1965-11-01
+aspirin,antiplatelet NSAID,"heart attack and stroke prevention, pain","75-150mg once daily for cardiac prophylaxis","Low-dose for heart; higher doses for pain. Avoid in children.",1950-01-01
+atorvastatin,statin,"high cholesterol","10-40mg once daily at night","Cholesterol-lowering. Long-term medicine.",1996-12-01
+amlodipine,calcium channel blocker,"hypertension, angina","5-10mg once daily","First-line hypertension medicine. Very well tolerated.",1990-05-01
+enalapril,ACE inhibitor,"hypertension, heart failure","5-20mg once or twice daily","ACE inhibitor. Watch for dry cough side effect.",1985-06-01
+losartan,angiotensin receptor blocker,"hypertension","50mg once daily","Alternative to enalapril without cough side effect.",1995-04-01
+metoprolol,beta blocker,"hypertension, heart failure","25-100mg twice daily","Slows heart rate. Do not stop abruptly.",1978-01-01
+furosemide,loop diuretic,"oedema, heart failure","40mg once or twice daily","Strong water pill. Take early in day.",1966-04-01
+hydrochlorothiazide,thiazide diuretic,"hypertension","12.5-25mg once daily","Mild water pill for blood pressure.",1959-03-01
+spironolactone,potassium sparing diuretic,"heart failure, ascites","25-100mg once daily","Aldosterone antagonist. Monitor potassium.",1959-11-01
+digoxin,cardiac glycoside,"atrial fibrillation, heart failure","0.25mg once daily","Strengthens heart contractions. Narrow safe range.",1954-06-01
+warfarin,anticoagulant,"atrial fibrillation, DVT","2-10mg once daily, adjusted by INR","Blood thinner. Regular INR monitoring mandatory. Many drug and food interactions.",1954-06-01
+metformin,antidiabetic,"type 2 diabetes","500mg twice daily with meals","First-line diabetes medication. Take with food to reduce stomach upset.",1994-03-01
+glimepiride,sulfonylurea,"type 2 diabetes","1-4mg once daily","Add-on to metformin. Risk of low blood sugar.",1995-11-01
+insulin regular,hormone,"diabetes","individualised, 0.5-1 IU/kg/day","Short-acting insulin. Refrigerate.",1982-01-01
+levothyroxine,hormone,"hypothyroidism","25-200mcg once daily empty stomach","Thyroid replacement. Take 30 minutes before breakfast.",1958-01-01
+omeprazole,proton pump inhibitor,"acid reflux, peptic ulcer","20mg once daily before breakfast","Reduces stomach acid. Take empty stomach.",1988-08-01
+pantoprazole,proton pump inhibitor,"acid reflux, peptic ulcer","40mg once daily","Similar to omeprazole; fewer interactions.",1994-12-01
+ranitidine,H2 blocker,"acid reflux, peptic ulcer","150mg twice daily","Older acid suppressant. Some brands withdrawn for contamination — verify source.",1981-05-01
+ondansetron,antiemetic,"nausea, vomiting","4-8mg two or three times daily","Prevents nausea from chemotherapy or post-surgery.",1990-01-01
+loperamide,antidiarrhoeal,"acute diarrhoea","4mg initially then 2mg after each loose stool; max 16mg/day","Slows bowel. Do not use in bloody diarrhoea.",1976-12-01
+salbutamol,bronchodilator,"asthma, COPD","2 puffs of inhaler as needed","Rescue inhaler for wheezing. Use spacer.",1969-08-01
+budesonide,inhaled corticosteroid,"asthma prevention","200-400mcg twice daily via inhaler","Prevents asthma attacks. Rinse mouth after use.",1980-04-01
+iron + folic acid,haematinic,"anaemia in pregnancy","60mg iron + 0.5mg folic acid once daily","Standard IFA tablet under government programme.",1970-01-01
+isoniazid,antitubercular,"tuberculosis","300mg once daily","TB first-line. Always in combination.",1952-01-01
+rifampicin,antitubercular,"tuberculosis","450-600mg once daily empty stomach","TB first-line. Turns urine orange.",1968-09-01
+flupirtine,analgesic,"musculoskeletal pain","200mg three times daily","Centrally acting analgesic. Hepatotoxicity risk — limited use.",2005-07-01

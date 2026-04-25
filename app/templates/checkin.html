@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}जाँच / Check-in{% endblock %}
+{% block content %}
+<h1 class="page-title">आप कैसा महसूस कर रहे हैं?</h1>
+
+<p class="big-text">दवा लेने के बाद कोई तकलीफ़ है? हमें बताइए।</p>
+
+<div class="card">
+  <label class="field-label" for="utterance">लिखिए या बोलिए</label>
+  <textarea id="utterance" class="text-input" rows="4" placeholder="उदाहरण: पेट में थोड़ा दर्द है..."></textarea>
+  <div class="row">
+    <button class="btn btn-secondary" id="mic-btn">
+      <span aria-hidden="true">🎤</span> बोलकर बताएँ
+    </button>
+  </div>
+  <button class="btn btn-primary" id="submit-checkin">
+    <span aria-hidden="true">📤</span> भेजें
+  </button>
+</div>
+
+<div id="checkin-reply" class="result-zone" aria-live="polite"></div>
+{% endblock %}
+{% block scripts %}
+<script src="/static/checkin.js"></script>
+{% endblock %}

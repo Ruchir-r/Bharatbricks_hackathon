@@ -1,0 +1,44 @@
+alias,normalized_brand,generic_or_molecule,drug_class,confidence,notes
+orop-codrug,Crocin Cold,paracetamol+chlorpheniramine+phenylephrine,cold-remedy combination,0.85,common typo for "Crocin Cold"
+orop-cough,Corex,codeine+chlorpheniramine,cough syrup,0.85,typical Indian cough syrup brand
+orop-cold,Crocin Cold,paracetamol+chlorpheniramine+phenylephrine,cold-remedy combination,0.85,
+orop,Crocin Cold,paracetamol+chlorpheniramine+phenylephrine,cold-remedy combination,0.7,short form
+allkose,Levocet,levocetirizine,second-gen antihistamine,0.8,thrice-daily antihistamine pattern
+althose,Levocet,levocetirizine,second-gen antihistamine,0.8,similar to allkose
+allergy,Levocet,levocetirizine,second-gen antihistamine,0.85,
+breesep,Breze SF,menthol+camphor+eucalyptus,steam inhalation,0.8,steam inhaler capsules
+breesip,Breze SF,menthol+camphor+eucalyptus,steam inhalation,0.8,
+breese p,Breze SF,menthol+camphor+eucalyptus,steam inhalation,0.85,
+breze,Breze SF,menthol+camphor+eucalyptus,steam inhalation,0.9,
+karvol,Karvol Plus,menthol+camphor+terpine,steam inhalation,0.9,alternative steam inhaler
+sipan-d,Sinarest D,paracetamol+phenylephrine+chlorpheniramine,cold-remedy combination,0.85,"D suffix = decongestant + cold combo"
+sinarest,Sinarest,paracetamol+phenylephrine+chlorpheniramine,cold-remedy combination,0.95,
+sinarest d,Sinarest D,paracetamol+phenylephrine+chlorpheniramine,cold-remedy combination,0.95,
+coldact,Coldact Flu,paracetamol+phenylephrine+chlorpheniramine+caffeine,cold-flu combination,0.95,
+coldact flu,Coldact Flu,paracetamol+phenylephrine+chlorpheniramine+caffeine,cold-flu combination,0.98,
+crocin,Crocin,paracetamol,analgesic antipyretic,0.95,
+crocin cold,Crocin Cold,paracetamol+chlorpheniramine+phenylephrine,cold-remedy combination,0.95,
+dolo,Dolo 650,paracetamol,analgesic antipyretic,0.95,
+para,Paracetamol,paracetamol,analgesic antipyretic,0.85,short form
+paracetam,Paracetamol,paracetamol,analgesic antipyretic,0.9,typo
+amox,Amoxicillin,amoxicillin,penicillin antibiotic,0.9,short form
+augmentin,Augmentin,amoxicillin+clavulanic acid,broad-spectrum antibiotic,0.95,
+azithro,Azithromycin,azithromycin,macrolide antibiotic,0.95,
+zifi,Zifi,cefixime,3rd-gen cephalosporin,0.95,common cefixime brand
+taxim-o,Taxim-O,cefixime,3rd-gen cephalosporin,0.95,common cefixime brand
+levocet,Levocet,levocetirizine,second-gen antihistamine,0.95,
+montair,Montair,montelukast,leukotriene antagonist,0.95,
+allegra,Allegra,fexofenadine,second-gen antihistamine,0.95,
+cetzine,Cetzine,cetirizine,second-gen antihistamine,0.95,
+betadine,Betadine,povidone-iodine,topical antiseptic,0.95,
+volini,Volini,diclofenac,topical NSAID,0.95,
+combiflam,Combiflam,paracetamol+ibuprofen,analgesic combination,0.95,
+ecosprin,Ecosprin,aspirin,antiplatelet,0.95,
+glycomet,Glycomet,metformin,antidiabetic,0.95,
+glucophage,Glucophage,metformin,antidiabetic,0.95,
+amlovas,Amlovas,amlodipine,calcium channel blocker,0.95,
+norvasc,Norvasc,amlodipine,calcium channel blocker,0.95,
+eltroxin,Eltroxin,levothyroxine,thyroid hormone,0.95,
+omee,Omez,omeprazole,proton pump inhibitor,0.9,
+pan-d,Pan-D,pantoprazole+domperidone,acid + nausea combination,0.9,
+levipil,Levipil,levetiracetam,anticonvulsant,0.95,

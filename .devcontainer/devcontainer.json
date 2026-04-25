@@ -1,0 +1,38 @@
+{
+  "name": "claude-databricks-sandbox",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "lts" },
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "configureZshAsDefaultShell": true,
+      "upgradePackages": true
+    }
+  },
+
+  "remoteEnv": {
+    "DATABRICKS_HOST": "${localEnv:DATABRICKS_HOST}",
+    "DATABRICKS_TOKEN": "${localEnv:DATABRICKS_TOKEN}"
+  },
+
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+
+  "mounts": [
+    "source=claude-sandbox-home,target=/home/vscode,type=volume"
+  ],
+
+  "postCreateCommand": ".devcontainer/post-create.sh",
+
+  "remoteUser": "vscode",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "anthropic.claude-code",
+        "databricks.databricks"
+      ]
+    }
+  }
+}
