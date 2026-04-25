@@ -32,7 +32,7 @@ OUT = REPO / "app" / "static" / "translations.json"
 # - "ml" is the Malayalam form.
 T: dict[str, dict[str, str]] = {
     # === Header / nav ===
-    "Rx Helper":          {"en": "Rx Helper", "hi": "दवा सहायक", "ml": "മരുന്ന് സഹായി"},
+    "Bharosa":            {"en": "Bharosa", "hi": "भरोसा", "ml": "ഭരോസ"},
     "घर":                  {"en": "Home", "hi": "घर", "ml": "ഹോം"},
     "स्कैन":                {"en": "Scan", "hi": "स्कैन", "ml": "സ്കാൻ"},
     "दवाइयाँ":              {"en": "Medicines", "hi": "दवाइयाँ", "ml": "മരുന്നുകൾ"},

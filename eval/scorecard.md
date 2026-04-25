@@ -1,4 +1,4 @@
-# Rx Helper — Eval Scorecard
+# Bharosa — Eval Scorecard
 
 - **Cases passed:** 14 / 16  (88%)
 - **Individual checks passed:** 33 / 36  (92%)

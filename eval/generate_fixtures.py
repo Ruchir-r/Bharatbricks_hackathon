@@ -70,7 +70,7 @@ def make_synth_multi() -> Path:
 
     d.text((60, y), "Follow up: 5 days.   Keep ORS at home.", fill="black", font=f_body); y += 60
     d.text((60, y), "Signature: _______________________", fill="black", font=f_small); y += 40
-    d.text((60, H - 60), "Generated for Rx Helper eval. Non-clinical fixture.", fill="#999", font=f_footer)
+    d.text((60, H - 60), "Generated for Bharosa eval. Non-clinical fixture.", fill="#999", font=f_footer)
 
     out = OUT / "synth_multi.png"
     img.save(out, "PNG")
@@ -101,7 +101,7 @@ def make_label_paracetamol() -> Path:
     d.text((40, 205), "B.No:  PCT8842      Mfg: 02/2025   Exp: 01/2028", fill="#333", font=f_body)
     d.text((40, 245), "Mfd by: Cipla Ltd, Plot 8, MIDC Kurkumbh 413802",  fill="#333", font=f_small)
     d.text((40, 275), "Store below 30°C. Keep out of reach of children.", fill="#333", font=f_small)
-    d.text((40, 305), "Generated for Rx Helper eval. Non-clinical fixture.", fill="#999", font=f_small)
+    d.text((40, 305), "Generated for Bharosa eval. Non-clinical fixture.", fill="#999", font=f_small)
 
     out = OUT / "label_paracetamol.jpg"
     img.save(out, "JPEG", quality=88)

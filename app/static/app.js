@@ -1,5 +1,5 @@
 /* ========================================================================
-   Rx Helper — shared client logic
+   Bharosa — shared client logic
    - text-size toggle
    - language toggle (UI labels only; content uses server language param)
    - speak buttons → /api/tts → base64 wav → <audio>

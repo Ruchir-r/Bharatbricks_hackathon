@@ -1,4 +1,4 @@
-"""Safety guardrails for Rx Helper.
+"""Safety guardrails for Bharosa.
 
 Philosophy: fail-closed on anything touching medical information. Never hallucinate
 dose, substitutions, or diagnoses. Never override CDSCO-banned status. Always disclose

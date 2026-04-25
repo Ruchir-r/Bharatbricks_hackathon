@@ -1,4 +1,4 @@
-"""Rx Helper — FastAPI backend. Serves HTML pages + JSON API.
+"""Bharosa — FastAPI backend. Serves HTML pages + JSON API.
 
 Every endpoint is guard-wrapped. See lib/guards.py for the safety rules.
 Business logic in lib/*.py — this file just wires HTTP → guards → lib → response.
@@ -38,7 +38,7 @@ from lib import (
 )
 
 BASE_DIR = Path(__file__).parent
-app = FastAPI(title="Rx Helper")
+app = FastAPI(title="Bharosa")
 app.mount("/static", StaticFiles(directory=BASE_DIR / "static"), name="static")
 templates = Jinja2Templates(directory=BASE_DIR / "templates")
 

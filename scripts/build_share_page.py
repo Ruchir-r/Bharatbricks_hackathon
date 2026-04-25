@@ -124,7 +124,7 @@ HTML = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Rx Helper — Project share</title>
+<title>Bharosa — Project share</title>
 <style>
   :root {
     --bg: #f8fafc; --card: #ffffff; --text: #0f172a; --muted: #64748b;
@@ -218,7 +218,7 @@ HTML = """<!doctype html>
 <header class="hero">
   <div>
     <span class="badge ok">Live · Databricks Apps</span>
-    <h1>💊 Rx Helper</h1>
+    <h1>💊 Bharosa</h1>
     <p style="font-size:1.2em;color:var(--muted);margin:8px 0 16px">
       A voice-first prescription companion for low-literacy patients in rural India.
       Scans a prescription, cross-checks every drug against CDSCO's approved / banned / quality registries,

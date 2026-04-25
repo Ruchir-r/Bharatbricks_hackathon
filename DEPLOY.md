@@ -1,4 +1,4 @@
-# Deploying Rx Helper to Databricks
+# Deploying Bharosa to Databricks
 
 End-to-end guide. Should take ~15 minutes assuming a Databricks workspace is already provisioned.
 

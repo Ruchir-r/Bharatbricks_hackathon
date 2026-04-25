@@ -1,6 +1,6 @@
 {
-  "name": "Rx Helper",
-  "short_name": "Rx Helper",
+  "name": "Bharosa",
+  "short_name": "Bharosa",
   "description": "CDSCO-backed prescription trust + voice explainer",
   "start_url": "/",
   "display": "standalone",

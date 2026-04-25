@@ -1,4 +1,4 @@
-"""High-value secondary features for the Rx Helper app.
+"""High-value secondary features for the Bharosa app.
 
 Each function is intentionally small + composable. The HTTP layer in main.py wires
 them to /api/* endpoints; demo fallbacks live in static/fallbacks.js.

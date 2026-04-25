@@ -1,4 +1,4 @@
-"""End-to-end smoke test against the deployed Rx Helper app.
+"""End-to-end smoke test against the deployed Bharosa app.
 
 Usage:
   APP_URL=https://rx-helper-7474644161560453.aws.databricksapps.com \
