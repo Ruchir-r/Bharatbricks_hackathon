@@ -1,10 +1,10 @@
-# Bharosa · भरोसा
+# Dawa Dost · दवा दोस्त
+
+> 🏆 **Winner — Bharat Bricks Hacks 2026 · IIT Madras**
 
 **A voice-first prescription companion for low-literacy patients in rural India — built on Databricks, grounded in CDSCO regulatory data, and demoable end-to-end in under two minutes.**
 
-> *Bharosa* is Hindi for **trust**. Translator apps tell a rural patient *what* their prescription says. Bharosa tells them whether to **trust** it — cross-checking every drug against CDSCO's approved list, banned list, and not-of-standard-quality alerts; surfacing Jan Aushadhi generic equivalents to cut their bill 60–90%; and explaining it in their mother tongue by voice. When something goes wrong, one tap on the big red button rings their doctor through a Hindi voice agent.
-
-Submitted to **Bharat Bricks Hacks 2026 — IIT Madras**.
+> *Dawa Dost* — "the medicine friend." Translator apps tell a rural patient *what* their prescription says. Dawa Dost tells them whether to **trust** it — cross-checking every drug against CDSCO's approved list, banned list, and not-of-standard-quality alerts; surfacing Jan Aushadhi generic equivalents to cut their bill 60–90%; and explaining it in their mother tongue by voice. When something goes wrong, one tap on the big red button rings their doctor through a Hindi voice agent.
 
 ---
 

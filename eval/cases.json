@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "description": "Eval cases for Bharosa. Covers /api/scan, /api/trust, /api/explain, /api/interactions. Seed drugs: paracetamol+amoxicillin (safe), cefixime batch CXM2509A (NSQ), paracetamol+flupirtine (banned FDC).",
+  "description": "Eval cases for Dawa Dost. Covers /api/scan, /api/trust, /api/explain, /api/interactions. Seed drugs: paracetamol+amoxicillin (safe), cefixime batch CXM2509A (NSQ), paracetamol+flupirtine (banned FDC).",
   "fixtures_dir": "eval/fixtures",
   "cases": [
     {

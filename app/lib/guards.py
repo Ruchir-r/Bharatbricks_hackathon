@@ -1,4 +1,4 @@
-"""Safety guardrails for Bharosa.
+"""Safety guardrails for Dawa Dost.
 
 Philosophy: fail-closed on anything touching medical information. Never hallucinate
 dose, substitutions, or diagnoses. Never override CDSCO-banned status. Always disclose

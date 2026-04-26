@@ -1,7 +1,7 @@
-"""Build the 5-slide / 5-minute pitch deck for Bharosa @ Bharat Bricks IIT Madras.
+"""Build the pitch deck for Dawa Dost @ Bharat Bricks IIT Madras (winner).
 
 Mapped to the rubric (Databricks 30%, Accuracy 25%, Innovation 25%, Demo 20%).
-Outputs Bharosa_pitch.pptx in repo root.
+Outputs DawaDost_pitch.pptx in repo root.
 """
 
 from pptx import Presentation
@@ -75,7 +75,7 @@ def add_chip(slide, x, y, label, *, fill=ACCENT, fg=BG, size=11):
 
 def footer(slide, slide_no, total=6):
     add_text(slide, Inches(0.5), Inches(7.05), Inches(6), Inches(0.3),
-             "Bharosa · भरोसा · Bharat Bricks Hacks 2026 · IIT Madras",
+             "Dawa Dost · दवा दोस्त · Bharat Bricks Hacks 2026 · IIT Madras",
              size=9, color=MUTED)
     add_text(slide, Inches(11.6), Inches(7.05), Inches(1.4), Inches(0.3),
              f"{slide_no}/{total}", size=9, color=MUTED, align=PP_ALIGN.RIGHT)
@@ -101,15 +101,15 @@ add_text(s, Inches(0.9), Inches(0.6), Inches(11), Inches(0.45),
          size=14, bold=True, color=NAVY)
 
 add_text(s, Inches(0.9), Inches(1.2), Inches(11), Inches(2.0),
-         "Bharosa", size=80, bold=True, color=INK)
+         "Dawa Dost", size=80, bold=True, color=INK)
 add_text(s, Inches(0.9), Inches(2.6), Inches(11), Inches(0.7),
-         "भरोसा · trust", size=28, color=ACCENT)
+         "दवा दोस्त · the medicine friend", size=28, color=ACCENT)
 
 add_text(s, Inches(0.9), Inches(3.6), Inches(11.5), Inches(0.6),
          "Translator apps tell a rural patient WHAT their prescription says.",
          size=22, color=MUTED)
 add_text(s, Inches(0.9), Inches(4.2), Inches(11.5), Inches(0.6),
-         "Bharosa tells them whether to TRUST it.",
+         "Dawa Dost tells them whether to TRUST it.",
          size=24, bold=True, color=INK)
 
 # stats strip
@@ -161,7 +161,7 @@ add_text(s, Inches(0.9), Inches(4.55), Inches(11.5), Inches(0.5),
          "The insight",
          size=14, bold=True, color=ORANGE)
 add_text(s, Inches(0.9), Inches(4.95), Inches(11.5), Inches(0.85),
-         "The trust data is already public — sitting on a Government website nobody visits. Bharosa is a lakehouse problem dressed up as a healthcare problem.",
+         "The trust data is already public — sitting on a Government website nobody visits. Dawa Dost is a lakehouse problem dressed up as a healthcare problem.",
          size=18, bold=True, color=BG)
 
 # Why us strip
@@ -450,6 +450,6 @@ footer(s, 6)
 
 
 # ---------- save ----------
-out = "/Users/ruchir/Desktop/claude/Bharosa_pitch.pptx"
+out = "/Users/ruchir/Desktop/claude/DawaDost_pitch.pptx"
 prs.save(out)
 print(f"OK · {out}")

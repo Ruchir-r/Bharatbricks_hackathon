@@ -1,4 +1,4 @@
-# Deploying Bharosa to Databricks
+# Deploying Dawa Dost to Databricks
 
 End-to-end guide. Should take ~15 minutes assuming a Databricks workspace is already provisioned.
 

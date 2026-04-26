@@ -1,4 +1,4 @@
-"""Sub-routers for the Bharosa FastAPI app.
+"""Sub-routers for the Dawa Dost FastAPI app.
 
 Each router groups related endpoints by feature area, keeping main.py thin.
 Routers register their own paths via APIRouter and are mounted in main.py
